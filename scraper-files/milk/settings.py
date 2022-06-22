@@ -22,9 +22,9 @@ DOWNLOAD_HANDLERS = {
 
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 
-PLAYWRIGHT_PROCESS_REQUEST_HEADERS = "scrapy_playwright.headers.use_scrapy_headers"
+# PLAYWRIGHT_PROCESS_REQUEST_HEADERS = "scrapy_playwright.headers.use_scrapy_headers"
 
-PLAYWRIGHT_BROWSER_TYPE = "firefox"
+# PLAYWRIGHT_BROWSER_TYPE = "firefox"
 
 
 
