@@ -1,0 +1,47 @@
+# This is a basic workflow that is manually triggered
+
+name: scrape-shengsiong-manual
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "scrape"
+  scrape:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: checkout repo content
+        uses: actions/checkout@v2
+        
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+            python-version: 3.8.2
+            
+      - name: setup virtual environment
+        run: |
+            python -m venv venv
+            source venv/bin/activate
+            
+      - name: setup dependencies
+        run: |
+            pip install -r requirements.txt
+      - name: execute spider script to get the latest data
+        working-directory: ./scraper-files
+        run: scrapy crawl sg-ov8
+
+      - name: Commit and push if repo is modified
+        run: |
+            git config user.name "${GITHUB_ACTOR}"
+            git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+            git add -A
+            timestamp=$(date -u)
+            git commit -m "Scraped: [${timestamp}] sg-ov8 (manual)" 
+            git push "https://${GITHUB_ACTOR}:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main || exit 0
