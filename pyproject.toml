@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "repl_python3_Baby-Milk-Price-Logger"
+version = "0.1.0"
+description = ""
+authors = ["schmwong <<>>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Scrapy = "^2.6.1"
+pandas = "^1.4.2"
+pytz = "^2022.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

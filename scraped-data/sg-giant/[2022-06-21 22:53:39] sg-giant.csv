@@ -1,0 +1,77 @@
+,Date,Day,Country-Retailer,Stage,Brand,Name,Nett Weight,Weight (g),Price (SGD),Price per 100g,In Stock
+1,2022/06/21,Tue,SG-Giant,Stage 1,Abbott Isomil,Abbott Isomil EYE-Q Plus Infant Powder 850g,850g,850,57.95,6.82,Yes
+2,2022/06/21,Tue,SG-Giant,Stage 1,Abbott Similac,Abbott Similac EYE-Q Plus 2'-FL Infant Powder 1.8kg,1.8kg,1800,122.80,6.82,Yes
+3,2022/06/21,Tue,SG-Giant,Stage 1,Abbott Similac,Abbott Similac EYE-Q Plus 2'-FL Infant Powder 850g,850g,850,61.70,7.26,Yes
+4,2022/06/21,Tue,SG-Giant,Stage 1,Abbott Similac,Abbott Similac Organic Infant Formula Milk Stage 1 900g,900g,900,78.00,8.67,Yes
+5,2022/06/21,Tue,SG-Giant,Stage 1,Abbott Similac,Abbott Similac RS 1 EyeQ 850g,850g,850,65.95,7.76,Yes
+6,2022/06/21,Tue,SG-Giant,Stage 1,Aptamil,Aptamil Gold+ H.A. Stage 1 600G,600g,600,44.70,7.45,Yes
+7,2022/06/21,Tue,SG-Giant,Stage 1,Aptamil,Aptamil Gold+ Stage 1 900g,900g,900,63.00,7.00,Yes
+8,2022/06/21,Tue,SG-Giant,Stage 1,Bellamy's,Bellamy's Organic Infant Formula,900g,900,54.90,6.10,Yes
+9,2022/06/21,Tue,SG-Giant,Stage 1,Dumex,Dumex Dulac Stage 1 Infant Newborn Baby Milk Formula 800g,800g,800,14.80,1.85,Yes
+10,2022/06/21,Tue,SG-Giant,Stage 1,Dumex,Dumex Mamil Gold Soy Infant Newborn Milk Formula (0 to 12 months old) 900g,900g,900,53.00,5.89,Yes
+11,2022/06/21,Tue,SG-Giant,Stage 1,Dumex,Dumex Mamil Gold Stage 1 Infant Newborn Baby Milk Formula 850g,850g,850,56.00,6.59,Yes
+12,2022/06/21,Tue,SG-Giant,Stage 1,Frisolac,Frisolac Gold HA - Infant Formula Baby Milk Powder Stage 1 (0-12 M),400g,400,29.60,7.40,Yes
+13,2022/06/21,Tue,SG-Giant,Stage 1,Frisolac,Frisolac Gold Stage 1 2'-FL 1.8kg - Infant Newborn Baby Milk Formula,1.8kg,1800,115.00,6.39,Yes
+14,2022/06/21,Tue,SG-Giant,Stage 1,Nature One Dairy,Nature One Dairy Premium Infant Formula Milk 900g,900g,900,29.50,3.28,Yes
+15,2022/06/21,Tue,SG-Giant,Stage 1,Nature One Dairy,Nature One Dairy Standard Infant Formula Milk Step 1 900g,900g,900,27.50,3.06,Yes
+16,2022/06/21,Tue,SG-Giant,Stage 1,Nestle Lactogen,Nestle Lactogen Comfortis Infant Formula 1.8kg,1.8kg,1800,37.60,2.09,Yes
+17,2022/06/21,Tue,SG-Giant,Stage 1,Wyeth S-26,Wyeth S-26 GOLD PRO Stage 1 w 2'-FL 900g,900g,900,60.50,6.72,Yes
+18,2022/06/21,Tue,SG-Giant,Stage 1,Wyeth S-26,Wyeth S-26 Nursoy Gold Stage 1 900g,900g,900,48.00,5.33,Yes
+19,2022/06/21,Tue,SG-Giant,Stage 2,Abbott Similac,Abbott Similac Stage 2 EYE-Q Plus 2'-FL Follow On Formula 1.8kg,1.8kg,1800,112.30,6.24,Yes
+20,2022/06/21,Tue,SG-Giant,Stage 2,Abbott Similac,Abbott Similac Stage 2 EYE-Q Plus 2'-FL Follow On Formula 850g,850g,850,56.15,6.61,Yes
+21,2022/06/21,Tue,SG-Giant,Stage 2,Aptamil,Aptamil Gold+ Stage 2 900g,900g,900,57.50,6.39,Yes
+22,2022/06/21,Tue,SG-Giant,Stage 2,Bellamy's,Bellamy's Organic Step 2 Follow On Milk Formula 900g,900g,900,54.90,6.10,Yes
+23,2022/06/21,Tue,SG-Giant,Stage 2,Dumex,Dumex Dulac Stage 2 Follow On Baby Milk Formula 800g,800g,800,14.80,1.85,Yes
+24,2022/06/21,Tue,SG-Giant,Stage 2,Dumex,Dumex Mamil Gold Stage 2 Follow On Baby Milk Formula 850g,850g,850,51.50,6.06,Yes
+25,2022/06/21,Tue,SG-Giant,Stage 2,Enfagrow,Enfagrow A+ Gentlease 360 DHA Stage 2 Milk Formula 900g,900g,900,69.60,7.73,No
+26,2022/06/21,Tue,SG-Giant,Stage 2,Nature One Dairy,Nature One Dairy Premium Follow-On Formula Milk Step 2 900g,900g,900,29.50,3.28,Yes
+27,2022/06/21,Tue,SG-Giant,Stage 2,Nature One Dairy,Nature One Dairy Standard Follow-On Formula Milk Step 2 900g,900g,900,27.50,3.06,Yes
+28,2022/06/21,Tue,SG-Giant,Stage 3,Abbott Grow,Abbott Grow Stage 3 900g,900g,900,24.95,2.77,Yes
+29,2022/06/21,Tue,SG-Giant,Stage 3,Abbott Isomil,Abbott Isomil Soy Growing Up Milk Formula S3 850g (#),850g,850,55.10,6.48,Yes
+30,2022/06/21,Tue,SG-Giant,Stage 3,Abbott Similac,Abbott Similac Gain Stage 3 EYE-Q Plus 2'-FL Growing Up Formula 850g,850g,850,46.35,5.45,Yes
+31,2022/06/21,Tue,SG-Giant,Stage 3,Abbott Similac,Abbott Similac Stage 3 EYE-Q Plus 2'-FL Growing Up Formula 1.8kg,1.8kg,1800,92.60,5.14,Yes
+32,2022/06/21,Tue,SG-Giant,Stage 3,Aptamil,Aptamil Gold+ H.A. Stage 3 600g,600g,600,37.30,6.22,Yes
+33,2022/06/21,Tue,SG-Giant,Stage 3,Aptamil,Aptamil Gold+ H.A. Stage 3 600g TP PP,1.2kg,1200,65.10,5.42,Yes
+34,2022/06/21,Tue,SG-Giant,Stage 3,Aptamil,Aptamil Gold+ Stage 3 900g,1.8kg,1800,73.40,4.08,Yes
+35,2022/06/21,Tue,SG-Giant,Stage 3,Aptamil,Aptamil Gold+ Stage 3 900g,900g,900,42.15,4.68,Yes
+36,2022/06/21,Tue,SG-Giant,Stage 3,Bellamy's,Bellamy's Organic Step 3 Toddler Milk Drink 900g,900g,900,43.90,4.88,Yes
+37,2022/06/21,Tue,SG-Giant,Stage 3,Dumex,Dumex Dugro Growing Up Kid Milk Formula - Stage 3 (2x800g),1.6kg,1600,43.00,2.69,Yes
+38,2022/06/21,Tue,SG-Giant,Stage 3,Dumex,Dumex Dugro Stage 3 Growing Up Baby Milk Formula 700g,700g,700,19.90,2.84,Yes
+39,2022/06/21,Tue,SG-Giant,Stage 3,Dumex,Dumex Mamil Gold Soy Growing Up Milk Formula 1 Year Onwards 800g,800g,800,43.60,5.45,Yes
+40,2022/06/21,Tue,SG-Giant,Stage 3,Enfagrow,Enfagrow A+ Gentlease 360 DHA Stage 3 Milk Formula 900g,900g,900,55.25,6.14,Yes
+41,2022/06/21,Tue,SG-Giant,Stage 3,Enfagrow,Enfagrow Pro A+ Stage 3 1.8kg,1.8kg,1800,91.00,5.06,Yes
+42,2022/06/21,Tue,SG-Giant,Stage 3,Enfagrow,Enfagrow Pro A+ Stage 3 900g,900g,900,52.80,5.87,Yes
+43,2022/06/21,Tue,SG-Giant,Stage 3,Nature One Dairy,Nature One Dairy Premium Toddler Nutritious Milk Drink Step 3 900g,900g,900,27.50,3.06,Yes
+44,2022/06/21,Tue,SG-Giant,Stage 3,Nature One Dairy,Nature One Dairy Standard Toddler Nutritious Milk Drink Step 3 900g,900g,900,21.00,2.33,Yes
+45,2022/06/21,Tue,SG-Giant,Stage 3,Nestle,Nestle Lactogrow 3 Milk Powder 1.8kg,1.8kg,1800,37.60,2.09,Yes
+46,2022/06/21,Tue,SG-Giant,Stage 3,Nestle Nan,Nestle Nan Optipro 3 1.6kg,1.6kg,1600,75.90,4.74,Yes
+47,2022/06/21,Tue,SG-Giant,Stage 3,Pediasure,Pediasure Triple Sure Chocolate Milk Formula 850g,850g,850,47.70,5.61,Yes
+48,2022/06/21,Tue,SG-Giant,Stage 3,Pediasure,Pediasure Triple Sure Classic Vanilla Milk Formula 850g,850g,850,47.70,5.61,Yes
+49,2022/06/21,Tue,SG-Giant,Stage 3,Pediasure,Pediasure Triple Sure Fruity Strawberry Milk Formula 850g,850g,850,47.70,5.61,Yes
+50,2022/06/21,Tue,SG-Giant,Stage 3,Wyeth S-26,Wyeth S-26 Ascenda 850g,850g,850,45.90,5.40,Yes
+51,2022/06/21,Tue,SG-Giant,Stage 3,Wyeth S-26,Wyeth S-26 GOLD PROGRESS Stage 3 w 2'-FL 1.6kg,1.6kg,1600,76.90,4.81,Yes
+52,2022/06/21,Tue,SG-Giant,Stage 3,Wyeth S-26,Wyeth S-26 Gold Progress Stage 3 1.6kg TP PP,3.2kg,3200,153.80,4.81,Yes
+53,2022/06/21,Tue,SG-Giant,Stage 4,Abbott Grow,Abbott Grow Preschool ImmuniGrow Milk Formula 3-6 Yrs Old 900g,900g,900,35.30,3.92,Yes
+54,2022/06/21,Tue,SG-Giant,Stage 4,Abbott Grow,Abbott Grow Stage 4 1.8kg,1.8kg,1800,65.50,3.64,Yes
+55,2022/06/21,Tue,SG-Giant,Stage 4,Abbott Similac,Abbott Similac Gain Kid 4 2'-FL Preschool Milk Formula 1.8kg,1.8kg,1800,81.90,4.55,Yes
+56,2022/06/21,Tue,SG-Giant,Stage 4,Abbott Similac,Abbott Similac Kid Stage 4 EYE-Q Plus 2'-FL Follow On Formula 850g,850g,850,41.10,4.84,Yes
+57,2022/06/21,Tue,SG-Giant,Stage 4,Aptamil,Aptamil Gold+ Stage 4 900g,900g,900,36.50,4.06,Yes
+58,2022/06/21,Tue,SG-Giant,Stage 4,Aptamil,Aptamil Gold+ Stage 4 900g TP PP,1.8kg,1800,63.75,3.54,Yes
+59,2022/06/21,Tue,SG-Giant,Stage 4,Bellamy's,Bellamy's Organic Junior Milk Stage 4 900g,900g,900,43.90,4.88,Yes
+60,2022/06/21,Tue,SG-Giant,Stage 4,Dumex,Dumex Dugro Growing Up Kid Milk Formula - Stage 4 (2x800g),1.6kg,1600,43.00,2.69,Yes
+61,2022/06/21,Tue,SG-Giant,Stage 4,Dumex,Dumex Dugro Stage 4 Growing Up Kid Milk Formula 700g,700g,700,19.90,2.84,Yes
+62,2022/06/21,Tue,SG-Giant,Stage 4,Dumex,Dumex Mamil Gold Stage 4 Growing Up Kid Milk Formula 1.6kg,1.6kg,1600,63.80,3.99,Yes
+63,2022/06/21,Tue,SG-Giant,Stage 4,Dumex,Dumex Mamil Gold Stage 4 Growing Up Kid Milk Formula 850g,850g,850,35.80,4.21,Yes
+64,2022/06/21,Tue,SG-Giant,Stage 4,Enfagrow,Enfagrow Pro A+ Stage 4 1.8kg,1.8kg,1800,81.15,4.51,Yes
+65,2022/06/21,Tue,SG-Giant,Stage 4,Enfagrow,Enfagrow Pro A+ Stage 4 900g,900g,900,41.30,4.59,Yes
+66,2022/06/21,Tue,SG-Giant,Stage 4,Hipp,Hipp Combiotic Organic Stage 4 Milk 800g,800g,800,49.00,6.12,Yes
+67,2022/06/21,Tue,SG-Giant,Stage 4,Nature One Dairy,Nature One Dairy Premium Junior Nutritious Milk Drink Step 4 900g,900g,900,26.50,2.94,Yes
+68,2022/06/21,Tue,SG-Giant,Stage 4,Nestle Nan,Nestle Nan Optipro 4 1.6kg,1.6kg,1600,72.70,4.54,Yes
+69,2022/06/21,Tue,SG-Giant,Stage 4,Nestle Nan,Nestle Nan Optipro 4 850g,850g,850,41.00,4.82,Yes
+70,2022/06/21,Tue,SG-Giant,Stage 4,Wyeth S-26,Wyeth S-26 GOLD PROMISE Stage 4 w 2'-FL 1.6kg,1.6kg,1600,65.00,4.06,Yes
+71,2022/06/21,Tue,SG-Giant,Stage 4,Wyeth S-26,Wyeth S-26 GOLD PROMISE Stage 4 w 2'-FL 900g,900g,900,39.50,4.39,Yes
+72,2022/06/21,Tue,SG-Giant,Stage 5,Abbott Grow,Abbott Grow School ImmuniGrow Milk Formula 6-12 Yrs Old 900g,900g,900,33.10,3.68,Yes
+73,2022/06/21,Tue,SG-Giant,Stage 5,Abbott Grow,Abbott Grow Stage 5 1.8kg,1.8kg,1800,61.20,3.40,Yes
+74,2022/06/21,Tue,SG-Giant,Stage 5,Dumex,Dumex Dugro Growing Up Kid Milk Formula - Stage 5 (2x800g),1.6kg,1600,43.00,2.69,Yes
+75,2022/06/21,Tue,SG-Giant,Stage 5,Enfagrow,Enfagrow Pro A+ Stage 5 1.8kg,1.8kg,1800,75.65,4.20,Yes
+76,2022/06/21,Tue,SG-Giant,Stage 5,Enfagrow,Enfagrow Pro A+ Stage 5 900g,900g,900,37.95,4.22,Yes

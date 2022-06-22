@@ -1,0 +1,207 @@
+,Date,Day,Country-Retailer,Stage,Brand,Name,Nett Weight,Weight (g),Price (SGD),Price per 100g,In Stock,Country of Origin,Dietary Attributes
+1,2022/06/20,Mon,SG-Fairprice,Stage 1,Abbott Grow,Abbott Grow Baby Infant Milk Formula - Step 1,900g,900,18.30,2.03,Yes,Singapore,Halal
+2,2022/06/20,Mon,SG-Fairprice,Stage 1,Abbott Isomil,Abbott Isomil Soy Infant Formula - Stage 1,850g,850,57.95,6.82,Yes,Netherlands,"Halal, Lactose-Free, Vegetarian"
+3,2022/06/20,Mon,SG-Fairprice,Stage 1,Abbott Isomil,Abbott Isomil Soy Infant Formula - Stage 1,400g,400,28.50,7.12,Yes,Netherlands,"Lactose-Free, Vegetarian"
+4,2022/06/20,Mon,SG-Fairprice,Stage 1,Abbott Similac,Abbott Similac Infant Milk Formula - Stage 1,850g,850,61.70,7.26,Yes,Ireland,"Gluten-Free, Halal"
+5,2022/06/20,Mon,SG-Fairprice,Stage 1,Abbott Similac,Abbott Similac Infant Milk Formula - Stage 1,400g,400,30.50,7.62,Yes,Ireland,"Gluten-Free, Halal"
+6,2022/06/20,Mon,SG-Fairprice,Stage 1,Abbott Similac,Abbott Similac NeoSure Special Infant Milk Formula - Stage 1,850g,850,62.90,7.40,Yes,Spain,
+7,2022/06/20,Mon,SG-Fairprice,Stage 1,Abbott Similac,Abbott Similac RS Special Infant Milk Formula - Stage 1,850g,850,65.95,7.76,Yes,Spain,
+8,2022/06/20,Mon,SG-Fairprice,Stage 1,Abbott Similac,Abbott Similac Total Comfort Infant Milk Formula - Stage 1,820g,820,66.90,8.16,Yes,Spain,Halal
+9,2022/06/20,Mon,SG-Fairprice,Stage 1,Aptamil,Aptamil Gold+ H.A Infant Milk Formula,600g,600,44.70,7.45,Yes,Thailand,
+10,2022/06/20,Mon,SG-Fairprice,Stage 1,Aptamil,Aptamil Gold+ Infant Milk Formula,900g,900,63.00,7.00,Yes,New Zealand,
+11,2022/06/20,Mon,SG-Fairprice,Stage 1,BabyBio,BabyBio Organic Optima Infant Formula (0-12 months),800g,800,43.90,5.49,Yes,France,
+12,2022/06/20,Mon,SG-Fairprice,Stage 1,BabyBio,Babybio Organic Goat Milk Infant Formula (0-12 months),800g,800,56.90,7.11,Yes,France,Goat's Milk
+13,2022/06/20,Mon,SG-Fairprice,Stage 1,Bellamy's,Bellamy's Organic Follow-On Milk Powder - Step 1,800g,800,58.90,7.36,Yes,Australia,Organic
+14,2022/06/20,Mon,SG-Fairprice,Stage 1,Bellamy's,Bellamy's Organic Infant Milk Formula - Step 1,900g,900,54.90,6.10,Yes,Australia,Organic
+15,2022/06/20,Mon,SG-Fairprice,Stage 1,Bimbosan,Bimbosan Organic Infant Milk Formula - Stage 1,400g,400,31.90,7.97,Yes,Switzerland,Organic
+16,2022/06/20,Mon,SG-Fairprice,Stage 1,Dumex,Dumex Dulac Infant Milk Formula - Step 1,800g,800,14.80,1.85,Yes,Indonesia,Halal
+17,2022/06/20,Mon,SG-Fairprice,Stage 1,Dumex,Dumex Mamil Gold Infant Milk Formula,850g,850,56.00,6.59,Yes,Germany,Halal
+18,2022/06/20,Mon,SG-Fairprice,Stage 1,Dumex,Dumex Mamil Gold Infant Soy Milk Formula,900g,900,53.00,5.89,No,Indonesia,Halal
+19,2022/06/20,Mon,SG-Fairprice,Stage 1,Enfamil,Enfamil A+ Infant Milk Powder - A.R. (0 to 12 Months),900g,900,63.20,7.02,Yes,Netherlands,Halal
+20,2022/06/20,Mon,SG-Fairprice,Stage 1,Enfamil,Enfamil A+ Infant Milk Powder Formula - Soy (0 - 12 Months),624g,624,44.60,7.15,Yes,USA,
+21,2022/06/20,Mon,SG-Fairprice,Stage 1,Enfamil,Enfamil Pro A+ Follow-On Milk Formula - Stage 1,900g,900,70.35,7.82,Yes,Netherlands,
+22,2022/06/20,Mon,SG-Fairprice,Stage 1,Enfamil,Enfamil Pro A+ Infant Milk Formula - Stage 1,1.8kg,1800,134.10,7.45,Yes,Netherlands,
+23,2022/06/20,Mon,SG-Fairprice,Stage 1,Enfamil,Enfamil Pro A+ Infant Milk Formula - Stage 1,400g,400,32.95,8.24,Yes,Netherlands,Halal
+24,2022/06/20,Mon,SG-Fairprice,Stage 1,Fairprice Gold,FairPrice Gold Newborn Infant Milk Formula - Stage 1,900g,900,29.00,3.22,Yes,Australia,Halal
+25,2022/06/20,Mon,SG-Fairprice,Stage 1,Frisolac,Frisolac Gold Infant Formula,1.8kg,1800,115.00,6.39,Yes,Netherlands,Halal
+26,2022/06/20,Mon,SG-Fairprice,Stage 1,Frisolac,Frisolac Gold Infant Formula,400g,400,28.90,7.22,Yes,Netherlands,Halal
+27,2022/06/20,Mon,SG-Fairprice,Stage 1,Frisolac,Frisolac Gold Special Infant Milk Formula - AR (Reflux),400g,400,29.60,7.40,Yes,Netherlands,Halal
+28,2022/06/20,Mon,SG-Fairprice,Stage 1,Frisolac,Frisolac Gold Special Infant Milk Formula - HA,400g,400,29.60,7.40,Yes,Netherlands,Halal
+29,2022/06/20,Mon,SG-Fairprice,Stage 1,Hipp,Hipp Organic Combiotic Infant Milk Stage 1,800g,800,59.00,7.38,Yes,Germany,Organic
+30,2022/06/20,Mon,SG-Fairprice,Stage 1,Hipp,Hipp Organic Infant Milk 1,300g,300,19.90,6.63,Yes,Germany,Organic
+31,2022/06/20,Mon,SG-Fairprice,Stage 1,Holle,Holle Organic Infant Goat Milk Formula,400g,400,39.90,9.97,Yes,Austria,"Goat's Milk, Organic"
+32,2022/06/20,Mon,SG-Fairprice,Stage 1,Holle,Holle Organic Infant Milk Formula,400g,400,28.90,7.22,No,Germany,Organic
+33,2022/06/20,Mon,SG-Fairprice,Stage 1,Kari Home,Karihome Goat Milk Infant Formula,900g,900,57.00,6.33,Yes,New Zealand,"Goat's Milk, Halal"
+34,2022/06/20,Mon,SG-Fairprice,Stage 1,Kendamil,Kendamil Goat Infant Milk Stage 1 (0 - 6 months),800g,800,61.95,7.74,Yes,United Kingdom,"Goat's Milk, Vegetarian"
+35,2022/06/20,Mon,SG-Fairprice,Stage 1,Kendamil,Kendamil Organic Infant Formula (0 - 12 months),800g,800,57.95,7.24,Yes,United Kingdom,"Organic, Vegetarian"
+36,2022/06/20,Mon,SG-Fairprice,Stage 1,Nature One Dairy,Nature One Dairy Organic Newborn Milk Formula - Stage 1,900g,900,45.00,5.00,Yes,Australia,Organic
+37,2022/06/20,Mon,SG-Fairprice,Stage 1,Nature One Dairy,Nature One Dairy Premium Milk Drink Formula - Newborn,900g,900,29.50,3.28,Yes,Australia,Halal
+38,2022/06/20,Mon,SG-Fairprice,Stage 1,Nestle Nan,Nestle Nan A.R. Specialized Infant Formula - Stage 1,400g,400,39.00,9.75,Yes,Germany,
+39,2022/06/20,Mon,SG-Fairprice,Stage 1,Nestle Nan,Nestle Nan C.R. Specialized Infant Formula - Stage 1,400g,400,39.00,9.75,Yes,Germany,
+40,2022/06/20,Mon,SG-Fairprice,Stage 1,Nestle Nan,Nestle Nan Optipro Infant Milk Formula - Stage 1,850g,850,59.60,7.01,Yes,Singapore,Halal
+41,2022/06/20,Mon,SG-Fairprice,Stage 1,Nestle,Nestle Nan Sensitive Specialized Infant Formula -Stage 1,800g,800,66.90,8.36,Yes,Germany,
+42,2022/06/20,Mon,SG-Fairprice,Stage 1,Nestle Nan,Nestle Nan Supremepro H.A Milk Formula - Stage 1,800g,800,65.50,8.19,No,Switzerland,Halal
+43,2022/06/20,Mon,SG-Fairprice,Stage 1,Nestle Lactogen,Nestlé LACTOGEN 1 Starter Infant Formula 1.8kg,1.8kg,1800,37.60,2.09,Yes,Philippines,Halal
+44,2022/06/20,Mon,SG-Fairprice,Stage 1,Nestle Lactogen,Nestlé LACTOGEN 1 Starter Infant Formula 650g,650g,650,13.60,2.09,Yes,Philippines,Halal
+45,2022/06/20,Mon,SG-Fairprice,Stage 1,Abbott Similac,Similac Organic Stage 1 900g,900g,900,78.00,8.67,Yes,Denmark,"Halal, Organic"
+46,2022/06/20,Mon,SG-Fairprice,Stage 1,Wakodo,Wakodo Lebens 1 Premium Gold (0-12 months),810g,810,58.90,7.27,Yes,Japan,
+47,2022/06/20,Mon,SG-Fairprice,Stage 1,Wyeth S-26,Wyeth S-26 Gold Pro Infant Milk Formula - Stage 1,900g,900,60.50,6.72,Yes,Singapore,Halal
+48,2022/06/20,Mon,SG-Fairprice,Stage 2,Abbott Similac,Abbott Similac Follow On Milk Formula - Step 2,1.8kg,1800,112.30,6.24,Yes,Ireland,Halal
+49,2022/06/20,Mon,SG-Fairprice,Stage 2,Abbott Similac,Abbott Similac Follow On Milk Formula - Step 2,850g,850,56.15,6.61,Yes,Ireland,Halal
+50,2022/06/20,Mon,SG-Fairprice,Stage 2,Abbott Similac,Abbott Similac Total Comfort Follow On Milk Formula - Stage 2,820g,820,61.80,7.54,Yes,Spain,Halal
+51,2022/06/20,Mon,SG-Fairprice,Stage 2,Aptamil,Aptamil Gold+ Follow On Formula For 6 to 12 Months - Stage 2,900g,900,57.50,6.39,Yes,New Zealand,
+52,2022/06/20,Mon,SG-Fairprice,Stage 2,Bellamy's,Bellamy's Organic Follow On Milk Formula - Step 2,900g,900,54.90,6.10,Yes,Australia,Organic
+53,2022/06/20,Mon,SG-Fairprice,Stage 2,Dumex,Dumex Dulac Infant Milk Formula - Step 2,800g,800,14.80,1.85,Yes,Indonesia,Halal
+54,2022/06/20,Mon,SG-Fairprice,Stage 2,Dumex,Dumex Mamil Gold Follow-On Milk Formula - Step 2,850g,850,51.50,6.06,Yes,Germany,Halal
+55,2022/06/20,Mon,SG-Fairprice,Stage 2,Enfamil,Enfamil Pro A+ Follow-On Milk Formula - Stage 2,1.8kg,1800,124.30,6.91,Yes,Netherlands,
+56,2022/06/20,Mon,SG-Fairprice,Stage 2,Enfamil,Enfamil Pro A+ Follow-On Milk Formula - Stage 2,900g,900,65.95,7.33,Yes,Netherlands,
+57,2022/06/20,Mon,SG-Fairprice,Stage 2,Fairprice Gold,FairPrice Gold Follow on Milk Formula - Stage 2,900g,900,29.00,3.22,Yes,Australia,Halal
+58,2022/06/20,Mon,SG-Fairprice,Stage 2,Frisolac,Frisolac Gold Follow On Milk Formula - Stage 2,1.8kg,1800,105.00,5.83,Yes,Netherlands,Halal
+59,2022/06/20,Mon,SG-Fairprice,Stage 2,Frisolac,Frisolac Gold Follow-On Milk Formula - Stage 2,400g,400,26.90,6.72,Yes,Netherlands,Halal
+60,2022/06/20,Mon,SG-Fairprice,Stage 2,Frisolac,Frisolac Gold Follow-on Formula - Stage 2,900g,900,56.90,6.32,Yes,Netherlands,Halal
+61,2022/06/20,Mon,SG-Fairprice,Stage 2,Hipp,HiPP Organic Combiotic Follow On Milk Formula - Stage 2,800g,800,59.00,7.38,Yes,Germany,Organic
+62,2022/06/20,Mon,SG-Fairprice,Stage 2,Holle,Holle Organic Infant Follow-Up Milk Formula - Stage 2,600g,600,38.90,6.48,Yes,Germany,Organic
+63,2022/06/20,Mon,SG-Fairprice,Stage 2,Kendamil,Kendamil Goat Follow On Milk Stage 2 (6 - 12 months),800g,800,61.95,7.74,Yes,United Kingdom,Goat's Milk
+64,2022/06/20,Mon,SG-Fairprice,Stage 2,Nature One Dairy,Nature One Dairy Premium Follow-On Formula - Step 2,900g,900,29.50,3.28,Yes,Australia,Halal
+65,2022/06/20,Mon,SG-Fairprice,Stage 2,Nestle Nan,Nestle Nan Optipro Follow-Up Milk Formula - Stage 2,850g,850,53.30,6.27,Yes,Singapore,Halal
+66,2022/06/20,Mon,SG-Fairprice,Stage 2,Nestle Nan,Nestle Nan Optipro HA Follow Up Formula 2'-FL - Stage 2,800g,800,54.60,6.83,Yes,Switzerland,
+67,2022/06/20,Mon,SG-Fairprice,Stage 2,Nestle Lactogen,Nestlé LACTOGEN 2 Follow-Up Milk Formula 1.8kg,1.8kg,1800,37.60,2.09,Yes,Philippines,Halal
+68,2022/06/20,Mon,SG-Fairprice,Stage 2,Wyeth S-26,Wyeth S-26 Promil Gold Follow On Milk Formula - Stage 2,900g,900,56.50,6.28,Yes,Singapore,Halal
+69,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Grow,Abbott Grow Toddler Growing Up Milk Formula - Stage 3,900g,900,24.95,2.77,Yes,Singapore,Halal
+70,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Grow,"Abbott Grow Toddler Growing Up Milk Formula - Stage 3 (Buy 2 for $47.60, Save $2.30)",2x900g,1800,47.60,2.64,Yes,Singapore,Halal
+71,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Isomil,Abbott Isomil Growing Up Soy Milk Formula - Step 3,850g,850,55.10,6.48,Yes,Netherlands,"Lactose-Free, Vegetarian"
+72,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Isomil,"Abbott Isomil Growing Up Soy Milk Formula - Step 3 (Buy 2 for $103.20, Save $7.00)",2x850g,1700,103.20,6.07,Yes,Netherlands,"Lactose-Free, Vegetarian"
+73,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Similac,Abbott Similac Gain Growing Up Milk Formula - Stage 3,2x1.8kg,3600,166.00,4.61,Yes,Ireland,
+74,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Similac,Abbott Similac Gain Growing Up Milk Formula - Stage 3,1.8kg,1800,92.60,5.14,Yes,Ireland,Halal
+75,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Similac,Abbott Similac Gain Growing Up Milk Formula - Stage 3,850g,850,46.35,5.45,Yes,Ireland,"Trans-Fat Free, Halal"
+76,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Similac,Abbott Similac Gain Growing Up Milk Formula - Stage 3,7x350g,2450,103.90,4.24,Yes,Ireland,Halal
+77,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Similac,"Abbott Similac Gain Growing Up Milk Formula - Stage 3 (Buy 3 for $133.20, Save $5.85)",3x850g,2550,133.20,5.22,Yes,Ireland,"Trans-Fat Free, Halal"
+78,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Similac,Abbott Similac Total Comfort Growing Up Milk Formula - Stage 3,820g,820,53.90,6.57,Yes,Spain,"Lactose-Free, Halal"
+79,2022/06/20,Mon,SG-Fairprice,Stage 3,Aptamil,Aptamil Gold+ Prosyneo HA Milk Formula - Stage 3,2x600g,1200,65.10,5.42,Yes,Thailand,
+80,2022/06/20,Mon,SG-Fairprice,Stage 3,Aptamil,Aptamil Gold+ Prosyneo HA Milk Formula - Stage 3,6x600g,3600,211.80,5.88,Yes,Thailand,
+81,2022/06/20,Mon,SG-Fairprice,Stage 3,Aptamil,Aptamil Gold+ Prosyneo HA Milk Formula - Stage 3,600g,600,37.30,6.22,Yes,Thailand,
+82,2022/06/20,Mon,SG-Fairprice,Stage 3,Aptamil,Aptamil Gold+ Toddler Growing Up Milk Formula - Stage 3,2x900g,1800,73.40,4.08,No,New Zealand,
+83,2022/06/20,Mon,SG-Fairprice,Stage 3,Aptamil,Aptamil Gold+ Toddler Growing Up Milk Formula - Stage 3,900g,900,42.15,4.68,Yes,New Zealand,
+84,2022/06/20,Mon,SG-Fairprice,Stage 3,Aptamil,Aptamil Gold+ Toddler Growing Up Milk Formula - Stage 3,6x900g(ctn),5400,246.60,4.57,Yes,New Zealand,
+85,2022/06/20,Mon,SG-Fairprice,Stage 3,BabyBio,BabyBio Organic Optima Growing-Up Formula (10-36 months),800g,800,40.90,5.11,Yes,France,
+86,2022/06/20,Mon,SG-Fairprice,Stage 3,BabyBio,Babybio Organic Goat Milk Growing-Up (10-36 months) Formula,800g,800,54.90,6.86,Yes,France,Goat's Milk
+87,2022/06/20,Mon,SG-Fairprice,Stage 3,Bellamy's,Bellamy's Organic Toddler Milk Powder - Step 3,800g,800,54.70,6.84,Yes,Australia,Organic
+88,2022/06/20,Mon,SG-Fairprice,Stage 3,Bellamy's,Bellamy's Organic Toddler Milk Powder - Step 3,900g,900,43.90,4.88,Yes,Australia,Organic
+89,2022/06/20,Mon,SG-Fairprice,Stage 3,Bimbosan,Bimbosan Organic Follow-On Formula - Stage 3,400g,400,31.90,7.97,Yes,Switzerland,Organic
+90,2022/06/20,Mon,SG-Fairprice,Stage 3,Dale & Cecil,Dale & Cecil Miwako A+ Plant-Based Formula Milk,700g,700,44.90,6.41,Yes,Malaysia,
+91,2022/06/20,Mon,SG-Fairprice,Stage 3,Dale & Cecil,Dale & Cecil Miwako Plant Milk,700g,700,37.00,5.29,Yes,Malaysia,
+92,2022/06/20,Mon,SG-Fairprice,Stage 3,Dumex,Dumex Dugro Growing Up Milk - Step 3,1.6kg,1600,43.00,2.69,Yes,Thailand,"Healthier Choice, Halal"
+93,2022/06/20,Mon,SG-Fairprice,Stage 3,Dumex,Dumex Dugro Growing Up Milk - Step 3,700g,700,19.90,2.84,Yes,Thailand,"Halal, Healthier Choice"
+94,2022/06/20,Mon,SG-Fairprice,Stage 3,Dumex,Dumex Dugro Growing Up Milk -Step 3,1.6kg+700g,2300,40.90,1.78,No,Thailand,"Halal, Healthier Choice"
+95,2022/06/20,Mon,SG-Fairprice,Stage 3,Dumex,Dumex Mamil Gold Growing Up Milk Formula - Step 3,2x1.6kg+850g,4050,147.00,3.63,Yes,Germany,
+96,2022/06/20,Mon,SG-Fairprice,Stage 3,Dumex,Dumex Mamil Gold Growing Up Milk Formula - Step 3,1.6kg,1600,73.00,4.56,Yes,Germany,Halal
+97,2022/06/20,Mon,SG-Fairprice,Stage 3,Dumex,Dumex Mamil Gold Soy Growing Up Milk Formula,800g,800,43.60,5.45,Yes,Indonesia,Halal
+98,2022/06/20,Mon,SG-Fairprice,Stage 3,Enfagrow,Enfagrow A+ Gentlease Growing Up Milk - Stage 3,900g,900,55.25,6.14,Yes,Netherlands,Halal
+99,2022/06/20,Mon,SG-Fairprice,Stage 3,Enfagrow,Enfagrow A+ Gentlease Milk Powder Formula - Stage 3,6x900g(ctn),5400,331.50,6.14,Yes,Netherlands,Halal
+100,2022/06/20,Mon,SG-Fairprice,Stage 3,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 3,6x1.8kg(ctn),10800,545.80,5.05,Yes,Netherlands,Halal
+101,2022/06/20,Mon,SG-Fairprice,Stage 3,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 3,1.8kg,1800,100.00,5.56,Yes,Netherlands,Halal
+102,2022/06/20,Mon,SG-Fairprice,Stage 3,Etblisse,Etblisse Emil I'Kid DHA PRO,700g,700,30.30,4.33,Yes,Malaysia,"Halal, Vegetarian, Trans-Fat Free, Gluten-Free, Lactose-Free"
+103,2022/06/20,Mon,SG-Fairprice,Stage 3,Fairprice Gold,FairPrice Gold Growing Up Milk Formula - Stage 3,6x900g(ctn),5400,150.00,2.78,Yes,Australia,Halal
+104,2022/06/20,Mon,SG-Fairprice,Stage 3,Fairprice Gold,FairPrice Gold Growing Up Milk Formula - Stage 3,900g,900,25.00,2.78,Yes,Australia,"Halal, Hypoallergenic"
+105,2022/06/20,Mon,SG-Fairprice,Stage 3,Fresco Nutrition,Fresco Nutrition Goat's Milk Baby Formula (1-3 Years),900g,900,59.90,6.66,No,New Zealand,
+106,2022/06/20,Mon,SG-Fairprice,Stage 3,Friso,Friso Gold Growing Up Milk Formula - Stage 3,1.8kg,1800,87.70,4.87,Yes,Netherlands,"Halal, Healthier Choice"
+107,2022/06/20,Mon,SG-Fairprice,Stage 3,Friso,Friso Gold Growing Up Milk Formula - Stage 3,1.8kg+400g,2200,84.00,3.82,No,Netherlands,Halal
+108,2022/06/20,Mon,SG-Fairprice,Stage 3,Friso,Friso Gold Growing-Up Formula - Comfort Next,400g,400,26.95,6.74,Yes,Netherlands,Halal
+109,2022/06/20,Mon,SG-Fairprice,Stage 3,Friso,Friso Gold Growing-up Formula - Stage 3,6x900g(ctn),5400,280.20,5.19,Yes,Netherlands,Halal
+110,2022/06/20,Mon,SG-Fairprice,Stage 3,Friso,Friso Gold Growing-up Formula - Stage 3,900g,900,46.70,5.19,Yes,Netherlands,Halal
+111,2022/06/20,Mon,SG-Fairprice,Stage 3,Hipp,HiPP Junior Combiotic Growing Up Milk Formula - Stage 3,800g,800,49.00,6.12,Yes,Germany,
+112,2022/06/20,Mon,SG-Fairprice,Stage 3,Hipp,HiPP Organic Growing Up Milk Formula - Stage 3 (Junior),500g,500,22.50,4.50,Yes,Germany,Organic
+113,2022/06/20,Mon,SG-Fairprice,Stage 3,Holle,Holle Organic Growing-up Goat Milk 3 Formula,400g,400,39.90,9.97,Yes,Austria,"Goat's Milk, Organic"
+114,2022/06/20,Mon,SG-Fairprice,Stage 3,Illuma,Illuma Growing-Up Formula Milk Powder - Stage 3,900g,900,82.00,9.11,Yes,Ireland,Halal
+115,2022/06/20,Mon,SG-Fairprice,Stage 3,Kari Home,Karihome Goat Milk Growing Up Formula - Stage 3,900g,900,51.80,5.76,Yes,New Zealand,"Goat's Milk, Halal"
+116,2022/06/20,Mon,SG-Fairprice,Stage 3,Kari Home,Karihome Goat Milk Growing-Up Formula - Stage 3,2x900ml,1800,99.90,5.55,Yes,New Zealand,Goat's Milk
+117,2022/06/20,Mon,SG-Fairprice,Stage 3,Kendakids,Kendakids Vita-Boost Shake Banana 400g,400g,400,11.48,2.87,Yes,United Kingdom,
+118,2022/06/20,Mon,SG-Fairprice,Stage 3,Kendakids,Kendakids Vita-Boost Shake Chocolate 400g,400g,400,11.48,2.87,Yes,United Kingdom,
+119,2022/06/20,Mon,SG-Fairprice,Stage 3,Kendakids,Kendakids Vita-Boost Shake Strawberry 400g,400g,400,11.48,2.87,Yes,United Kingdom,
+120,2022/06/20,Mon,SG-Fairprice,Stage 3,Kendamil,Kendamil Goat Toddler Milk Stage 3 (12 - 36 months),800g,800,59.95,7.49,No,United Kingdom,Goat's Milk
+121,2022/06/20,Mon,SG-Fairprice,Stage 3,Mo Milk,Mo Milk DHA & Lutein Original,270g,270,32.00,11.85,Yes,Australia,Gluten-Free
+122,2022/06/20,Mon,SG-Fairprice,Stage 3,Mo Milk,Mo Milk Immunity Original,270g,270,32.00,11.85,Yes,Australia,Gluten-Free
+123,2022/06/20,Mon,SG-Fairprice,Stage 3,Mo Milk,Mo Milk Synbiotic Mixed Berries,270g,270,32.00,11.85,Yes,Australia,Gluten-Free
+124,2022/06/20,Mon,SG-Fairprice,Stage 3,Mo Milk,Mo Milk Synbiotic Original,270g,270,32.00,11.85,Yes,Australia,Gluten-Free
+125,2022/06/20,Mon,SG-Fairprice,Stage 3,Nature One Dairy,Nature One Dairy Organic Toddler Milk Formula - Stage 3,900g,900,37.50,4.17,Yes,Australia,Organic
+126,2022/06/20,Mon,SG-Fairprice,Stage 3,Nature One Dairy,"Nature One Dairy Organic Toddler Milk Formula - Stage 3 (Buy 2 for $70.55, Save $4.45)",2x900g,1800,70.55,3.92,Yes,Australia,Organic
+127,2022/06/20,Mon,SG-Fairprice,Stage 3,Nature One Dairy,Nature One Dairy Premium Milk Drink Formula - Step 3,900g,900,27.50,3.06,Yes,Australia,
+128,2022/06/20,Mon,SG-Fairprice,Stage 3,Nature One Dairy,"Nature One Dairy Premium Milk Drink Formula - Step 3 (Buy 2 for $50.55, Save $4.45)",2x900g,1800,50.55,2.81,Yes,Australia,
+129,2022/06/20,Mon,SG-Fairprice,Stage 3,Nestle Nan,Nestle Nan Optipro Toddler Milk Formula - Stage 3,850g,850,42.10,4.95,Yes,Singapore,Halal
+130,2022/06/20,Mon,SG-Fairprice,Stage 3,Nestle Nan,Nestle Nan Optipro Toddler Milk Formula - Stage 3,6x850g,5100,252.60,4.95,Yes,Singapore,"Halal, Healthier Choice"
+131,2022/06/20,Mon,SG-Fairprice,Stage 3,Nestle Nan,Nestle Nan Optipro Toddler Milk Formula - Stage 3,2x1.6kg,3200,131.85,4.12,No,Singapore,"Halal, Healthier Choice"
+132,2022/06/20,Mon,SG-Fairprice,Stage 3,Nestle Nan,Nestle Nan Optipro Toddler Milk Formula - Stage 3,1.6kg,1600,75.90,4.74,Yes,Singapore,"Healthier Choice, Halal"
+133,2022/06/20,Mon,SG-Fairprice,Stage 3,Nestle Nan,Nestle Nan Supremepro H.A Milk Formula - Stage 3,800g,800,52.90,6.61,Yes,Switzerland,Halal
+134,2022/06/20,Mon,SG-Fairprice,Stage 3,Lactogrow,Nestlé LACTOGEN 3 Growing Up Milk Formula 1.8kg,1.8kg,1800,37.60,2.09,Yes,Philippines,"Healthier Choice, Halal"
+135,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Similac,Similac Organic Stage 3 900g,900g,900,62.40,6.93,Yes,Denmark,"Halal, Organic"
+136,2022/06/20,Mon,SG-Fairprice,Stage 3,Abbott Similac,"Similac Organic Stage 3 900g (Buy 2 for $114.80, Save $10.00)",2x900g,1800,114.80,6.38,Yes,Denmark,"Halal, Organic"
+137,2022/06/20,Mon,SG-Fairprice,Stage 3,Viplus,Viplus+ Goat Junior Milk Formula,800g,800,55.90,6.99,Yes,Australia,"Goat's Milk, Halal"
+138,2022/06/20,Mon,SG-Fairprice,Stage 3,Wakodo,Wakodo Lebens 2 Premium Gold (1-3YRS),830g,830,48.90,5.89,Yes,Japan,
+139,2022/06/20,Mon,SG-Fairprice,Stage 3,Wyeth S-26,Wyeth S-26 Progress Gold Grow Up Milk Formula - Stage 3,2x1.6kg,3200,153.80,4.81,Yes,Singapore,
+140,2022/06/20,Mon,SG-Fairprice,Stage 3,Wyeth S-26,Wyeth S-26 Progress Gold Grow Up Milk Formula - Stage 3,900g,900,46.90,5.21,Yes,Singapore,Halal
+141,2022/06/20,Mon,SG-Fairprice,Stage 3,Wyeth S-26,Wyeth S-26 Progress Gold Grow Up Milk Formula - Step 3,1.6kg,1600,76.90,4.81,Yes,Singapore,Halal
+142,2022/06/20,Mon,SG-Fairprice,Stage 4,Abbott Grow,Abbott Grow Preschool Milk Formula - 3 Years Onward,1.8kg,1800,65.50,3.64,Yes,Singapore,"Healthier Choice, Trans-Fat Free, Halal"
+143,2022/06/20,Mon,SG-Fairprice,Stage 4,Abbott Grow,Abbott Grow Preschool Milk Formula - 3 Years Onward,900g,900,35.30,3.92,Yes,Singapore,"Halal, Healthier Choice, Trans-Fat Free"
+144,2022/06/20,Mon,SG-Fairprice,Stage 4,Abbott Grow,"Abbott Grow Preschool Milk Formula - 3 Years Onward (Buy 2 for $121.00, Save $10.00)",2x1.8kg,3600,121.00,3.36,Yes,Singapore,"Healthier Choice, Trans-Fat Free, Halal"
+145,2022/06/20,Mon,SG-Fairprice,Stage 4,Abbott Grow,"Abbott Grow Preschool Milk Formula - 3 Years Onward (Buy 2 for $63.60, Save $7.00)",2x900g,1800,63.60,3.53,Yes,Singapore,"Halal, Healthier Choice, Trans-Fat Free"
+146,2022/06/20,Mon,SG-Fairprice,Stage 4,Abbott Similac,Abbott Similac Gain Kid Pre-School Milk Formula - Stage 4,2x1.8kg,3600,150.00,4.17,Yes,Ireland,
+147,2022/06/20,Mon,SG-Fairprice,Stage 4,Abbott Similac,Abbott Similac Gain Kid Pre-School Milk Formula - Stage 4,1.8kg,1800,81.90,4.55,Yes,Ireland,Halal
+148,2022/06/20,Mon,SG-Fairprice,Stage 4,Abbott Similac,Abbott Similac Gain Kid Pre-School Milk Formula - Stage 4,850g,850,41.10,4.84,Yes,Ireland,"Trans-Fat Free, Halal"
+149,2022/06/20,Mon,SG-Fairprice,Stage 4,Abbott Similac,Abbott Similac Gain Kid Pre-School Milk Formula - Stage 4,7x350g,2450,92.60,3.78,Yes,Ireland,Halal
+150,2022/06/20,Mon,SG-Fairprice,Stage 4,Abbott Similac,"Abbott Similac Gain Kid Pre-School Milk Formula - Stage 4 (Buy 3 for $117.60, Save $5.70)",3x850g,2550,117.60,4.61,Yes,Ireland,"Trans-Fat Free, Halal"
+151,2022/06/20,Mon,SG-Fairprice,Stage 4,Aptamil,Aptamil Gold+ Junior Growing Up Formula For 3 Years+ - Stage 4,900g,900,36.50,4.06,Yes,New Zealand,
+152,2022/06/20,Mon,SG-Fairprice,Stage 4,Aptamil,Aptamil Gold+ Junior Growing Up Milk Formula - Stage 4,6x900g(ctn),5400,216.00,4.00,Yes,New Zealand,
+153,2022/06/20,Mon,SG-Fairprice,Stage 4,Aptamil,Aptamil Gold+ Toddler Growing Up Milk Formula - Stage 4,2x900g,1800,63.75,3.54,No,New Zealand,
+154,2022/06/20,Mon,SG-Fairprice,Stage 4,Bellamy's,Bellamy's Organic Junior Milk Drink Formula - Step 4,900g,900,43.90,4.88,Yes,Australia,Organic
+155,2022/06/20,Mon,SG-Fairprice,Stage 4,Bellamy's,Bellamy's Organic Junior Milk Powder - Step 4,800g,800,54.70,6.84,Yes,Australia,Organic
+156,2022/06/20,Mon,SG-Fairprice,Stage 4,Dumex,Dumex Dugro Growing Up Milk - Step 4,1.6kg,1600,43.00,2.69,Yes,Thailand,"Halal, Healthier Choice"
+157,2022/06/20,Mon,SG-Fairprice,Stage 4,Dumex,Dumex Dugro Growing Up Milk - Step 4,700g,700,19.90,2.84,Yes,Thailand,"Halal, Healthier Choice"
+158,2022/06/20,Mon,SG-Fairprice,Stage 4,Dumex,Dumex Mamil Gold Growing Up Milk Formula - Step 4,1.6kgx2+850g,4050,122.60,3.03,Yes,Germany,
+159,2022/06/20,Mon,SG-Fairprice,Stage 4,Dumex,Dumex Mamil Gold Growing Up Milk Formula - Step 4,6x1.6kg(ctn),9600,382.80,3.99,Yes,Germany,Halal
+160,2022/06/20,Mon,SG-Fairprice,Stage 4,Dumex,Dumex Mamil Gold Growing Up Milk Formula - Step 4,850g,850,35.80,4.21,Yes,Germany,Halal
+161,2022/06/20,Mon,SG-Fairprice,Stage 4,Dumex,Dumex Mamil Gold Growing Up Milk Formula - Step 4,6x850g(ctn),5100,214.80,4.21,Yes,Germany,Halal
+162,2022/06/20,Mon,SG-Fairprice,Stage 4,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 4,2x1.8kg,3600,163.90,4.55,Yes,Netherlands,Halal
+163,2022/06/20,Mon,SG-Fairprice,Stage 4,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 4,6x1.8kg(ctn),10800,486.90,4.51,Yes,Netherlands,Halal
+164,2022/06/20,Mon,SG-Fairprice,Stage 4,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 4,6x900g(ctn),5400,247.80,4.59,Yes,Netherlands,Halal
+165,2022/06/20,Mon,SG-Fairprice,Stage 4,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 4,1.8kg,1800,90.15,5.01,Yes,Netherlands,Halal
+166,2022/06/20,Mon,SG-Fairprice,Stage 4,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 4,900g,900,41.30,4.59,Yes,Netherlands,Halal
+167,2022/06/20,Mon,SG-Fairprice,Stage 4,Fairprice Gold,FairPrice Gold Junior Milk Formula - Stage 4,6x900g(ctn),5400,144.00,2.67,Yes,Australia,
+168,2022/06/20,Mon,SG-Fairprice,Stage 4,Fairprice Gold,FairPrice Gold Junior Milk Formula - Stage 4,900g,900,24.00,2.67,Yes,Australia,
+169,2022/06/20,Mon,SG-Fairprice,Stage 4,Friso,Friso Gold Growing Up Milk Formula - Stage 4,1.8kg,1800,78.00,4.33,Yes,Netherlands,Halal
+170,2022/06/20,Mon,SG-Fairprice,Stage 4,Friso,Friso Gold Growing-up Formula - Stage 4,6x900g(ctn),5400,246.00,4.56,Yes,Netherlands,
+171,2022/06/20,Mon,SG-Fairprice,Stage 4,Friso,Friso Gold Growing-up Formula - Stage 4,900g,900,41.00,4.56,Yes,Netherlands,
+172,2022/06/20,Mon,SG-Fairprice,Stage 4,Friso,"Friso Gold Growing-up Formula - Stage 4 (Buy 2 for $63.20, Save $18.80)",2x900g,1800,63.20,3.51,Yes,Netherlands,
+173,2022/06/20,Mon,SG-Fairprice,Stage 4,Hipp,HiPP Junior Combiotic Growing Up Milk Formula - Stage 4,800g,800,49.00,6.12,Yes,Germany,
+174,2022/06/20,Mon,SG-Fairprice,Stage 4,Kari Home,Karihome Goat Milk Growing-Up Formula - Stage 4,2x900g,1800,99.90,5.55,Yes,New Zealand,Goat's Milk
+175,2022/06/20,Mon,SG-Fairprice,Stage 4,Kari Home,Karihome Goat Milk Pre-School Formula - Stage 4,900g,900,51.80,5.76,Yes,New Zealand,"Goat's Milk, Halal, Trans-Fat Free"
+176,2022/06/20,Mon,SG-Fairprice,Stage 4,Nature One Dairy,Nature One Dairy Premium Milk Drink Formula - Step 4,900g,900,26.50,2.94,Yes,Australia,
+177,2022/06/20,Mon,SG-Fairprice,Stage 4,Nature One Dairy,"Nature One Dairy Premium Milk Drink Formula - Step 4 (Buy 2 for $48.55, Save $4.45)",2x900g,1800,48.55,2.70,Yes,Australia,
+178,2022/06/20,Mon,SG-Fairprice,Stage 4,Nestle Nan,Nestle Nan Optipro Children Milk Formula - Stage 4,6x850g,5100,246.00,4.82,Yes,Singapore,"Halal, Healthier Choice"
+179,2022/06/20,Mon,SG-Fairprice,Stage 4,Nestle Nan,Nestle Nan Optipro Kid Children Milk Formula - Stage 4,850g,850,41.00,4.82,Yes,Singapore,Halal
+180,2022/06/20,Mon,SG-Fairprice,Stage 4,Nestle Nan,Nestle Nan Optipro Kid Children Milk Formula - Stage 4,1.6kg,1600,72.70,4.54,Yes,Singapore,"Halal, Healthier Choice"
+181,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,PediaSure TripleSure Milk Powder - Classic Vanilla,1.6kg,1600,84.70,5.29,Yes,Singapore,Halal
+182,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,PediaSure TripleSure Milk Powder - Classic Vanilla,850g,850,47.70,5.61,Yes,Singapore,"Trans-Fat Free, Halal"
+183,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,PediaSure TripleSure Milk Powder - Classic Vanilla,4x600g,2400,101.60,4.23,Yes,Singapore,"Halal, Trans-Fat Free"
+184,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,"PediaSure TripleSure Milk Powder - Classic Vanilla (Buy 2 for $166.80, Save $2.60)",2x1.6kg,3200,166.80,5.21,Yes,Singapore,Halal
+185,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,PediaSure TripleSure Milk Powder - Fruity Strawberry,2x850g,1700,85.90,5.05,Yes,Singapore,"Gluten-Free, Lactose-Free"
+186,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,PediaSure TripleSure Milk Powder - Fruity Strawberry,850g,850,47.70,5.61,Yes,Singapore,
+187,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,PediaSure TripleSure Milk Powder - Original (Sucrose Free),2x850g,1700,85.90,5.05,Yes,Singapore,"Gluten-Free, Lactose-Free"
+188,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,PediaSure TripleSure Milk Powder - Original (Sucrose Free),850g,850,47.70,5.61,Yes,Singapore,Halal
+189,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,PediaSure TripleSure Milk Powder - Premium Chocolate,2x850g,1700,85.90,5.05,Yes,Singapore,
+190,2022/06/20,Mon,SG-Fairprice,Stage 4,Pediasure,PediaSure TripleSure Milk Powder - Premium Chocolate,850g,850,47.70,5.61,Yes,Singapore,"Trans-Fat Free, Halal"
+191,2022/06/20,Mon,SG-Fairprice,Stage 4,Wakodo,Wakodo Lebens 3 Premium Gold Kids(3-6YRS),830g,830,39.50,4.76,Yes,Japan,
+192,2022/06/20,Mon,SG-Fairprice,Stage 4,Wyeth S-26,Wyeth S-26 Gold Ascenda Formulated Milk Powder - Vanilla,850g,850,45.90,5.40,Yes,Singapore,Halal
+193,2022/06/20,Mon,SG-Fairprice,Stage 4,Wyeth S-26,"Wyeth S-26 Gold Ascenda Formulated Milk Powder - Vanilla (Buy 2 for $82.55, Save $9.25)",2x850g,1700,82.55,4.86,Yes,Singapore,Halal
+194,2022/06/20,Mon,SG-Fairprice,Stage 4,Wyeth S-26,Wyeth S-26 Promise Gold Grow Up Milk Formula - Stage 4,900g,900,39.50,4.39,Yes,Singapore,Halal
+195,2022/06/20,Mon,SG-Fairprice,Stage 4,Wyeth S-26,Wyeth S-26 Promise Gold Grow Up Milk Formula - Step 4,1.6kg,1600,65.00,4.06,Yes,Singapore,Halal
+196,2022/06/20,Mon,SG-Fairprice,Stage 5,Abbott Grow,Abbott Grow School,900g,900,33.10,3.68,Yes,Singapore,"Halal, Healthier Choice"
+197,2022/06/20,Mon,SG-Fairprice,Stage 5,Abbott Grow,"Abbott Grow School (Buy 2 for $59.20, Save $7.00)",2x900g,1800,59.20,3.29,Yes,Singapore,"Halal, Healthier Choice"
+198,2022/06/20,Mon,SG-Fairprice,Stage 5,Abbott Grow,Abbott Grow School Milk Formula - 6 Years Onward,1.8kg,1800,61.20,3.40,Yes,Singapore,"Healthier Choice, Halal"
+199,2022/06/20,Mon,SG-Fairprice,Stage 5,Abbott Grow,"Abbott Grow School Milk Formula - 6 Years Onward (Buy 2 for $115.00, Save $7.40)",2x1.8kg,3600,115.00,3.19,Yes,Singapore,"Healthier Choice, Halal"
+200,2022/06/20,Mon,SG-Fairprice,Stage 5,Dumex,Dumex Dugro Growing Up Milk - Step 5,700g,700,19.90,2.84,Yes,Thailand,"Halal, Healthier Choice"
+201,2022/06/20,Mon,SG-Fairprice,Stage 5,Dumex,Dumex Durgro Growing Up MIlk - Step 5,1.6kg,1600,43.00,2.69,Yes,Thailand,"Halal, Healthier Choice"
+202,2022/06/20,Mon,SG-Fairprice,Stage 5,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 5,6x1.8kg(ctn),10800,453.90,4.20,Yes,Netherlands,Halal
+203,2022/06/20,Mon,SG-Fairprice,Stage 5,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 5,6x900g(ctn),5400,227.70,4.22,Yes,Netherlands,Halal
+204,2022/06/20,Mon,SG-Fairprice,Stage 5,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 5,900g,900,37.95,4.22,Yes,Netherlands,Halal
+205,2022/06/20,Mon,SG-Fairprice,Stage 5,Enfagrow,Enfagrow Pro A+ Growing Up Milk Powder Formula - Stage 5,1.8kg,1800,75.65,4.20,Yes,Netherlands,Halal
+206,2022/06/20,Mon,SG-Fairprice,Stage 5,Pediasure,PediaSure 10+ Milk Powder - Classic Vanilla,850g,850,47.70,5.61,Yes,Singapore,Halal
