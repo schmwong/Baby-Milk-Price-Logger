@@ -303,7 +303,7 @@ class SgOv8Spider(scrapy.Spider):
 			# |
 
 			# ---
-			price = re.findall(r"[-+]?(?:\d*\.\d+|\d+)", products[i].css("div.product-price > span::text"))[0]
+			price = re.findall(r"[-+]?(?:\d*\.\d+|\d+)", products[i].css("div.product-price > span::text").get())[0]
 			# |
 			product["Price (SGD)"] = price
 			# ---
