@@ -79,6 +79,7 @@ class SgOv8Spider(scrapy.Spider):
 			curl 'https://shengsiong.com.sg/mum-baby-kids/stage-1-milk-formula' \
 				-H 'authority: shengsiong.com.sg' \
 				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+				-H 'accept-encoding': 'gzip, deflate, br' \
 				-H 'accept-language: en-GB,en;q=0.9' \
 				-H 'cache-control: max-age=0' \
 				-H 'dnt: 1' \
@@ -99,6 +100,7 @@ class SgOv8Spider(scrapy.Spider):
 			curl 'https://shengsiong.com.sg/mum-baby-kids/stage-2-milk-formula' \
 				-H 'authority: shengsiong.com.sg' \
 				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+				-H 'accept-encoding': 'gzip, deflate, br' \
 				-H 'accept-language: en-GB,en;q=0.9' \
 				-H 'cache-control: max-age=0' \
 				-H 'dnt: 1' \
@@ -119,6 +121,7 @@ class SgOv8Spider(scrapy.Spider):
 			curl 'https://shengsiong.com.sg/mum-baby-kids/stage-3-milk-formula' \
 				-H 'authority: shengsiong.com.sg' \
 				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+				-H 'accept-encoding': 'gzip, deflate, br' \
 				-H 'accept-language: en-GB,en;q=0.9' \
 				-H 'cache-control: max-age=0' \
 				-H 'dnt: 1' \
@@ -139,6 +142,7 @@ class SgOv8Spider(scrapy.Spider):
 			curl 'https://shengsiong.com.sg/mum-baby-kids/stage-4-above-milk-formula' \
 				-H 'authority: shengsiong.com.sg' \
 				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+				-H 'accept-encoding': 'gzip, deflate, br' \
 				-H 'accept-language: en-GB,en;q=0.9' \
 				-H 'cache-control: max-age=0' \
 				-H 'dnt: 1' \
