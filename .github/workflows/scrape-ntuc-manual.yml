@@ -27,8 +27,8 @@ jobs:
             
       - name: setup virtual environment
         run: |
-            python -m venv scraper-env
-            source scraper-env/bin/activate
+            python -m venv venv
+            source venv/bin/activate
             
       - name: setup dependencies
         run: |
