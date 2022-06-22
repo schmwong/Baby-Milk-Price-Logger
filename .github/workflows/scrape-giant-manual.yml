@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: scrape-ntuc-manual
+name: scrape-giant-manual
 
 # Controls when the workflow will run
 on:
