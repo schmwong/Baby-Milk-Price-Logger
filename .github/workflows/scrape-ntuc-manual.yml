@@ -36,7 +36,7 @@ jobs:
 
       - name: execute spider script to get the latest data
         working-directory: ./scraper-files
-        run: scrapy crawl sg-ntuc-spider
+        run: scrapy crawl sg-ntuc
 
       - name: Commit and push if repo is modified
         run: |
