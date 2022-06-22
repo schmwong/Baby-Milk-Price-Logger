@@ -33,6 +33,8 @@ jobs:
       - name: setup dependencies
         run: |
             pip install -r requirements.txt
+            playwright install firefox
+            
       - name: execute spider script to get the latest data
         working-directory: ./scraper-files
         run: scrapy crawl sg-ov8
