@@ -81,7 +81,6 @@ class SgOv8Spider(scrapy.Spider):
 				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
 				-H 'accept-language: en-GB,en;q=0.9' \
 				-H 'cache-control: max-age=0' \
-				-H 'cookie: visid_incap_2599539=k1Uj5c97RcyPw1SCtuw3XSA8sGIAAAAAQUIPAAAAAACVAIr4XkYf+0/hhDpTVsp6; incap_ses_798_2599539=E4ZJKUXEglAKQZuibxETCyA8sGIAAAAA+JN7cJ1IxXSw8tpHyOmU/w==; sess-key=wVuj65gwaPT0lUYKnJYYT9FAUGR5jB; nlbi_2599539=OdJnS4PA9E/xWtluxarYuAAAAABQigKg3zaipKmXVBxFa9Xr; incap_ses_1234_2599539=ugQdVm1nq2yOCslFmQwgEcb8smIAAAAAu16uot2oQsX58LA2GIs9jA==' \
 				-H 'dnt: 1' \
 				-H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"' \
 				-H 'sec-ch-ua-mobile: ?0' \
@@ -102,7 +101,6 @@ class SgOv8Spider(scrapy.Spider):
 				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
 				-H 'accept-language: en-GB,en;q=0.9' \
 				-H 'cache-control: max-age=0' \
-				-H 'cookie: visid_incap_2599539=k1Uj5c97RcyPw1SCtuw3XSA8sGIAAAAAQUIPAAAAAACVAIr4XkYf+0/hhDpTVsp6; incap_ses_798_2599539=E4ZJKUXEglAKQZuibxETCyA8sGIAAAAA+JN7cJ1IxXSw8tpHyOmU/w==; sess-key=wVuj65gwaPT0lUYKnJYYT9FAUGR5jB; nlbi_2599539=OdJnS4PA9E/xWtluxarYuAAAAABQigKg3zaipKmXVBxFa9Xr; incap_ses_1234_2599539=ugQdVm1nq2yOCslFmQwgEcb8smIAAAAAu16uot2oQsX58LA2GIs9jA==' \
 				-H 'dnt: 1' \
 				-H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"' \
 				-H 'sec-ch-ua-mobile: ?0' \
@@ -123,7 +121,6 @@ class SgOv8Spider(scrapy.Spider):
 				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
 				-H 'accept-language: en-GB,en;q=0.9' \
 				-H 'cache-control: max-age=0' \
-				-H 'cookie: visid_incap_2599539=k1Uj5c97RcyPw1SCtuw3XSA8sGIAAAAAQUIPAAAAAACVAIr4XkYf+0/hhDpTVsp6; incap_ses_798_2599539=E4ZJKUXEglAKQZuibxETCyA8sGIAAAAA+JN7cJ1IxXSw8tpHyOmU/w==; sess-key=wVuj65gwaPT0lUYKnJYYT9FAUGR5jB; nlbi_2599539=OdJnS4PA9E/xWtluxarYuAAAAABQigKg3zaipKmXVBxFa9Xr; incap_ses_1234_2599539=ugQdVm1nq2yOCslFmQwgEcb8smIAAAAAu16uot2oQsX58LA2GIs9jA==' \
 				-H 'dnt: 1' \
 				-H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"' \
 				-H 'sec-ch-ua-mobile: ?0' \
@@ -144,7 +141,6 @@ class SgOv8Spider(scrapy.Spider):
 				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
 				-H 'accept-language: en-GB,en;q=0.9' \
 				-H 'cache-control: max-age=0' \
-				-H 'cookie: visid_incap_2599539=k1Uj5c97RcyPw1SCtuw3XSA8sGIAAAAAQUIPAAAAAACVAIr4XkYf+0/hhDpTVsp6; incap_ses_798_2599539=E4ZJKUXEglAKQZuibxETCyA8sGIAAAAA+JN7cJ1IxXSw8tpHyOmU/w==; sess-key=wVuj65gwaPT0lUYKnJYYT9FAUGR5jB; nlbi_2599539=OdJnS4PA9E/xWtluxarYuAAAAABQigKg3zaipKmXVBxFa9Xr; incap_ses_1234_2599539=ugQdVm1nq2yOCslFmQwgEcb8smIAAAAAu16uot2oQsX58LA2GIs9jA==' \
 				-H 'dnt: 1' \
 				-H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"' \
 				-H 'sec-ch-ua-mobile: ?0' \
@@ -218,8 +214,8 @@ class SgOv8Spider(scrapy.Spider):
 			
 	async def parse(self, response):
 		
-		# page = response.meta["playwright_page"]
-		# await page.close()
+		page = response.meta["playwright_page"]
+		await page.close()
 
 		products = response.css("div.card div.card-body")
 		product_list = []
