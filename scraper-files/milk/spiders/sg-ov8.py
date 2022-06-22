@@ -72,45 +72,133 @@ class SgOv8Spider(scrapy.Spider):
 
 	def start_requests(self):
 
-		urls = [
+		curls = [
 
 			# Stage 1
-			"https://shengsiong.com.sg/mum-baby-kids/stage-1-milk-formula?sortBy=brand-A-to-Z",
+			'''
+			curl 'https://shengsiong.com.sg/mum-baby-kids/stage-1-milk-formula' \
+				-H 'authority: shengsiong.com.sg' \
+				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+				-H 'accept-language: en-GB,en;q=0.9' \
+				-H 'cache-control: max-age=0' \
+				-H 'cookie: visid_incap_2599539=k1Uj5c97RcyPw1SCtuw3XSA8sGIAAAAAQUIPAAAAAACVAIr4XkYf+0/hhDpTVsp6; incap_ses_798_2599539=E4ZJKUXEglAKQZuibxETCyA8sGIAAAAA+JN7cJ1IxXSw8tpHyOmU/w==; sess-key=wVuj65gwaPT0lUYKnJYYT9FAUGR5jB; nlbi_2599539=OdJnS4PA9E/xWtluxarYuAAAAABQigKg3zaipKmXVBxFa9Xr; incap_ses_1234_2599539=ugQdVm1nq2yOCslFmQwgEcb8smIAAAAAu16uot2oQsX58LA2GIs9jA==' \
+				-H 'dnt: 1' \
+				-H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"' \
+				-H 'sec-ch-ua-mobile: ?0' \
+				-H 'sec-ch-ua-platform: "macOS"' \
+				-H 'sec-fetch-dest: document' \
+				-H 'sec-fetch-mode: navigate' \
+				-H 'sec-fetch-site: same-origin' \
+				-H 'sec-fetch-user: ?1' \
+				-H 'upgrade-insecure-requests: 1' \
+				-H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36' \
+				--compressed
+			''',
 
 			# Stage 2
-			"https://shengsiong.com.sg/mum-baby-kids/stage-2-milk-formula?sortBy=brand-A-to-Z",
+			'''
+			curl 'https://shengsiong.com.sg/mum-baby-kids/stage-2-milk-formula' \
+				-H 'authority: shengsiong.com.sg' \
+				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+				-H 'accept-language: en-GB,en;q=0.9' \
+				-H 'cache-control: max-age=0' \
+				-H 'cookie: visid_incap_2599539=k1Uj5c97RcyPw1SCtuw3XSA8sGIAAAAAQUIPAAAAAACVAIr4XkYf+0/hhDpTVsp6; incap_ses_798_2599539=E4ZJKUXEglAKQZuibxETCyA8sGIAAAAA+JN7cJ1IxXSw8tpHyOmU/w==; sess-key=wVuj65gwaPT0lUYKnJYYT9FAUGR5jB; nlbi_2599539=OdJnS4PA9E/xWtluxarYuAAAAABQigKg3zaipKmXVBxFa9Xr; incap_ses_1234_2599539=ugQdVm1nq2yOCslFmQwgEcb8smIAAAAAu16uot2oQsX58LA2GIs9jA==' \
+				-H 'dnt: 1' \
+				-H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"' \
+				-H 'sec-ch-ua-mobile: ?0' \
+				-H 'sec-ch-ua-platform: "macOS"' \
+				-H 'sec-fetch-dest: document' \
+				-H 'sec-fetch-mode: navigate' \
+				-H 'sec-fetch-site: same-origin' \
+				-H 'sec-fetch-user: ?1' \
+				-H 'upgrade-insecure-requests: 1' \
+				-H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36' \
+				--compressed
+			''',
 
 			# Stage 3
-			"https://shengsiong.com.sg/mum-baby-kids/stage-3-milk-formula?sortBy=brand-A-to-Z",
+			'''
+			curl 'https://shengsiong.com.sg/mum-baby-kids/stage-3-milk-formula' \
+				-H 'authority: shengsiong.com.sg' \
+				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+				-H 'accept-language: en-GB,en;q=0.9' \
+				-H 'cache-control: max-age=0' \
+				-H 'cookie: visid_incap_2599539=k1Uj5c97RcyPw1SCtuw3XSA8sGIAAAAAQUIPAAAAAACVAIr4XkYf+0/hhDpTVsp6; incap_ses_798_2599539=E4ZJKUXEglAKQZuibxETCyA8sGIAAAAA+JN7cJ1IxXSw8tpHyOmU/w==; sess-key=wVuj65gwaPT0lUYKnJYYT9FAUGR5jB; nlbi_2599539=OdJnS4PA9E/xWtluxarYuAAAAABQigKg3zaipKmXVBxFa9Xr; incap_ses_1234_2599539=ugQdVm1nq2yOCslFmQwgEcb8smIAAAAAu16uot2oQsX58LA2GIs9jA==' \
+				-H 'dnt: 1' \
+				-H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"' \
+				-H 'sec-ch-ua-mobile: ?0' \
+				-H 'sec-ch-ua-platform: "macOS"' \
+				-H 'sec-fetch-dest: document' \
+				-H 'sec-fetch-mode: navigate' \
+				-H 'sec-fetch-site: same-origin' \
+				-H 'sec-fetch-user: ?1' \
+				-H 'upgrade-insecure-requests: 1' \
+				-H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36' \
+				--compressed
+			''',
 
 			# Stage 4 and above
-			"https://shengsiong.com.sg/mum-baby-kids/stage-4-above-milk-formula?sortBy=brand-A-to-Z"
+			'''
+			curl 'https://shengsiong.com.sg/mum-baby-kids/stage-4-above-milk-formula' \
+				-H 'authority: shengsiong.com.sg' \
+				-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+				-H 'accept-language: en-GB,en;q=0.9' \
+				-H 'cache-control: max-age=0' \
+				-H 'cookie: visid_incap_2599539=k1Uj5c97RcyPw1SCtuw3XSA8sGIAAAAAQUIPAAAAAACVAIr4XkYf+0/hhDpTVsp6; incap_ses_798_2599539=E4ZJKUXEglAKQZuibxETCyA8sGIAAAAA+JN7cJ1IxXSw8tpHyOmU/w==; sess-key=wVuj65gwaPT0lUYKnJYYT9FAUGR5jB; nlbi_2599539=OdJnS4PA9E/xWtluxarYuAAAAABQigKg3zaipKmXVBxFa9Xr; incap_ses_1234_2599539=ugQdVm1nq2yOCslFmQwgEcb8smIAAAAAu16uot2oQsX58LA2GIs9jA==' \
+				-H 'dnt: 1' \
+				-H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"' \
+				-H 'sec-ch-ua-mobile: ?0' \
+				-H 'sec-ch-ua-platform: "macOS"' \
+				-H 'sec-fetch-dest: document' \
+				-H 'sec-fetch-mode: navigate' \
+				-H 'sec-fetch-site: same-origin' \
+				-H 'sec-fetch-user: ?1' \
+				-H 'upgrade-insecure-requests: 1' \
+				-H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36' \
+				--compressed
+			'''
 		]
-
-		headers = {
-			'authority': 'shengsiong.com.sg',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-			'accept-language': 'en-GB,en;q=0.9',
-			'cache-control': 'max-age=0',
-			'dnt': '1',
-			'referer': 'https://shengsiong.com.sg',
-			'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"',
-			'sec-ch-ua-mobile': '?0',
-			'sec-ch-ua-platform': '"macOS"',
-			'sec-fetch-dest': 'document',
-			'sec-fetch-mode': 'navigate',
-			'sec-fetch-site': 'none',
-			'sec-fetch-user': '?1',
-			'upgrade-insecure-requests': '1',
-			'user-agent': '''Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.
-			36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36''',
-		}
 		
 
-		for url in urls:
-			yield scrapy.Request(
-				url,
-				headers=headers,
+		# urls = [
+
+		# 	# Stage 1
+		# 	"https://shengsiong.com.sg/mum-baby-kids/stage-1-milk-formula?sortBy=brand-A-to-Z",
+
+		# 	# Stage 2
+		# 	"https://shengsiong.com.sg/mum-baby-kids/stage-2-milk-formula?sortBy=brand-A-to-Z",
+
+		# 	# Stage 3
+		# 	"https://shengsiong.com.sg/mum-baby-kids/stage-3-milk-formula?sortBy=brand-A-to-Z",
+
+		# 	# Stage 4 and above
+		# 	"https://shengsiong.com.sg/mum-baby-kids/stage-4-above-milk-formula?sortBy=brand-A-to-Z"
+		# ]
+
+		# headers = {
+		# 	'authority': 'shengsiong.com.sg',
+		# 	'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+		# 	'accept-language': 'en-GB,en;q=0.9',
+		# 	'cache-control': 'max-age=0',
+		# 	'dnt': '1',
+		# 	'referer': 'https://shengsiong.com.sg',
+		# 	'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"',
+		# 	'sec-ch-ua-mobile': '?0',
+		# 	'sec-ch-ua-platform': '"macOS"',
+		# 	'sec-fetch-dest': 'document',
+		# 	'sec-fetch-mode': 'navigate',
+		# 	'sec-fetch-site': 'none',
+		# 	'sec-fetch-user': '?1',
+		# 	'upgrade-insecure-requests': '1',
+		# 	'user-agent': '''Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.
+		# 	36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36''',
+		# }
+		
+
+		for curl in curls:
+			yield scrapy.Request.from_curl(
+				curl,
+				# headers=headers,
 				callback=self.parse,
 				meta=dict(
 					playwright=True,
