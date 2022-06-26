@@ -4,7 +4,7 @@ name: inspector
 on:
   workflow_run:
     workflows: 
-      [ scrape-giant-manual, scrape-ntuc-manual, scrape-ov8-manual ]
+      [scrape-giant-manual, scrape-ntuc-manual, scrape-ov8-manual]
     types: [completed]
         
 
