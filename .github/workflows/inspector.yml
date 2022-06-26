@@ -34,13 +34,6 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     
     steps: 
-    
-      - name: Statement
-        run: |
-            echo "${{ github.event.workflow.name }} failed."
-            echo "Workflow file path: ${{ github.event.workflow.path }}"
-            echo "${{ github.event.workflow.html_url }}"
-            export workflow_path=${{ github.event.workflow.path }}
             
       - name: Checkout repo content
         uses: actions/checkout@v2
@@ -51,7 +44,12 @@ jobs:
             python-version: 3.8.2
             
       - name: Run Python script
-        run: python reschedule_next_run.py
+        run: |
+            echo "${{ github.event.workflow.name }} failed."
+            echo "Workflow file path: ${{ github.event.workflow.path }}"
+            echo "${{ github.event.workflow.html_url }}"
+            export workflow_path=${{ github.event.workflow.path }}
+            python reschedule_next_run.py
       
       
       
