@@ -19,14 +19,21 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps: 
-      - run: echo "${{ github.event.workflows }} succeeded."
+      - name: Statement
+        run: |
+            echo "${{ github.event.workflow.name }} succeeded."
+            echo "Workflow file path: ${{ github.event.workflow.path }}"
+            echo "${{ github.event.workflow.html_url }}"
   
   on-failure:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps: 
       - name: Statement
-        run: echo "${{ github.event_name }} failed."
+        run: |
+            echo "${{ github.event.workflow.name }} failed."
+            echo "Workflow file path: ${{ github.event.workflow.path }}"
+            echo "${{ github.event.workflow.html_url }}"
       
   dump_contexts_to_log:
     runs-on: ubuntu-latest
