@@ -40,8 +40,7 @@ jobs:
             echo "${{ github.event.workflow.name }} failed."
             echo "Workflow file path: ${{ github.event.workflow.path }}"
             echo "${{ github.event.workflow.html_url }}"
-            workflow_path = ${{ github.event.workflow.path }}
-            export workflow_path
+            export workflow_path = ${{ github.event.workflow.path }}
             
       - name: Setup Python
         uses: actions/setup-python@v2
