@@ -26,10 +26,11 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps: 
       - name: Statement
-      - run: echo "${{ github.event_name }} failed."
+        run: echo "${{ github.event_name }} failed."
       
   dump_contexts_to_log:
     runs-on: ubuntu-latest
+    if: always()
     steps:
       - name: Dump GitHub context
         id: github_context_step
