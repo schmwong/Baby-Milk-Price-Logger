@@ -48,7 +48,7 @@ jobs:
             python-version: 3.8.2
             
       - name: Run Python script
-        working-directory: ./
+        working-directory: ${{ github.workspace }}
         run: python reschedule_next_run.py
       
       
