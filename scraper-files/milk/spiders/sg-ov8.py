@@ -29,6 +29,7 @@ import pandas as pd
 import datetime as dt
 import pytz
 from pathlib import Path
+import traceback
 
 
 # Reflects local time
@@ -68,6 +69,9 @@ print(f"\n\n\n{len(brand_list)} brands in Brand List:\n\n{brand_list}\n\n")
 class SgOv8Spider(scrapy.Spider):
 	
 	name = "sg-ov8"
+
+
+	allowed_domains = ["shengsiong.com.sg"]
 
 
 	def start_requests(self):
@@ -195,310 +199,344 @@ class SgOv8Spider(scrapy.Spider):
 		# }
 		
 
-		for curl in curls:
-			yield scrapy.Request.from_curl(
-				curl,
-				# headers=headers,
-				callback=self.parse,
-				meta=dict(
-					playwright=True,
-					playwright_include_page=True,
-					playwright_page_methods=[
-						PageMethod("wait_for_selector", "div.card div.card-body"),
-						PageMethod("wait_for_selector", "div.product-price > span"),
-						PageMethod("evaluate", "window.scrollBy(0, document.body.scrollHeight)"),
-						PageMethod("wait_for_selector", "div.product-list > div > div:nth-child(16)"), # 15 per page
-					],
-					errback=self.errback
+		try:			
+			for curl in curls:
+				yield scrapy.Request.from_curl(
+					curl,
+					# headers=headers,
+					callback=self.parse,
+					meta=dict(
+						playwright=True,
+						playwright_include_page=True,
+						playwright_page_methods=[
+							PageMethod("wait_for_selector", "div.card div.card-body"),
+							PageMethod("wait_for_selector", "div.product-price > span"),
+							PageMethod("evaluate", "window.scrollBy(0, document.body.scrollHeight)"),
+							PageMethod("wait_for_selector", "div.product-list > div > div:nth-child(16)"), # 15 per page
+						],
+						errback=self.errback
+					)
 				)
+
+		except Exception:
+			print(
+			f'''
+			  \n\n
+			  ---
+			  One or more errors occurred:
+			  
+			  {traceback.format_exc()}
+			  ---
+			  \n\n
+			  '''
 			)
 
 
 	
 			
 	async def parse(self, response):
+
+		try:
 		
-		page = response.meta["playwright_page"]
-		await page.close()
-
-		products = response.css("div.card div.card-body")
-		product_list = []
-
-		print("\n\n", len(products), " found for ", response.xpath(".//nav/ol/li[2]/text()").get(), "\n\n")
-
-
-		for i in range(len(products)):
-			# ------------------
-			milk_name = products[i].css("div.product-name::text").get().replace("S26", "S-26")
-			# |
-			# |
-
-			# ---------
-			product = {}
-			# |
-
-			# ---
-			for j in reversed(range(1, 6)):
-				if any(words in milk_name.lower() for words in [f"stage {j}", f"step {j}"]):
-					stage = f"Stage {j}"
+			page = response.meta["playwright_page"]
+			await page.close()
+	
+			products = response.css("div.card div.card-body")
+			product_list = []
+	
+			print("\n\n", len(products), " found for ", response.xpath(".//nav/ol/li[2]/text()").get(), "\n\n")
+	
+	
+			for i in range(len(products)):
+				# ------------------
+				milk_name = products[i].css("div.product-name::text").get().replace("S26", "S-26")
+				# |
+				# |
+	
+				# ---------
+				product = {}
+				# |
+	
+				# ---
+				if any(words in milk_name.lower() for words in ["stage 5", "step 5"]):
+					stage = "Stage 5"
+				elif any(words in milk_name.lower() for words in ["stage 4", "step 4"]):
+					stage = "Stage 4"
+				elif any(words in milk_name.lower() for words in ["stage 3", "step 3"]):
+					stage = "Stage 3"
+				elif any(words in milk_name.lower() for words in ["stage 2", "step 2"]):
+					stage = "Stage 2"
+				elif any(words in milk_name.lower() for words in ["stage 1", "step 1"]):
+					stage = "Stage 1"
 				else:
-					stage = None
-			# |
-			if stage is None:
-				stage = re.findall(r"Stage \d", response.xpath(".//nav/ol/li[2]/text()").get())[0]
-			# |
-			product["Stage"] = stage
-			# ---
-
-			# |
-
-			# ---
-			brand_from_list = extractOne(milk_name.split()[0], brand_list, scorer=ratio, score_cutoff=90)
-			# |
-			brand_from_dict = extractOne(milk_name, brand_dict.keys(), scorer=ratio, score_cutoff=80)
-			# |
-			if brand_from_list != None:
-				brand = brand_from_list[0]
+					stage = re.findall(r"Stage \d", response.xpath(".//nav/ol/li[2]/text()").get())[0]
 				# |
-			elif brand_from_dict != None:
-				brand = brand_dict[brand_from_dict[0]]
+				product["Stage"] = stage
+				# ---
+	
 				# |
-			else:
-				del brand_from_dict
-				brand_from_list = extractOne(milk_name.split()[0], brand_list, scorer=ratio, score_cutoff=80)
+	
+				# ---
+				brand_from_list = extractOne(milk_name.split()[0], brand_list, scorer=ratio, score_cutoff=90)
+				# |
+				brand_from_dict = extractOne(milk_name, brand_dict.keys(), scorer=ratio, score_cutoff=80)
 				# |
 				if brand_from_list != None:
 					brand = brand_from_list[0]
-				# |
+					# |
+				elif brand_from_dict != None:
+					brand = brand_dict[brand_from_dict[0]]
+					# |
 				else:
-					brand = milk_name.split()[0]
-			# |
-			product["Brand"] = brand
-			# ---
-
-			# |
-
-			# ---
-			if brand not in milk_name:
-				# Prepend Name with Brand, then delete duplicate substrings
-				# Use reversed() method to keep last occurrence of duplicate
-				a = (brand + " " + milk_name).split()
-				b = dict(zip(reversed([x.lower()for x in a]), reversed(a)))
-				name = " ".join(reversed(b.values()))
+					del brand_from_dict
+					brand_from_list = extractOne(milk_name.split()[0], brand_list, scorer=ratio, score_cutoff=80)
+					# |
+					if brand_from_list != None:
+						brand = brand_from_list[0]
+					# |
+					else:
+						brand = milk_name.split()[0]
 				# |
-			else:
-				name = milk_name
-			# |
-			product["Name"] = name
-			# ---
-
-			# |
-
-			# ---
-			nett_weight = products[i].css("div.product-packSize::text").get().lower().replace(" ", "")
-			# |
-			product["Nett Weight"] = nett_weight
-			# ---
-
-			# |
-
-			# ---
-			price = re.findall(r"[-+]?(?:\d*\.\d+|\d+)", products[i].css("div.product-price > span::text").get())[0]
-			# |
-			product["Price (SGD)"] = price
-			# ---
-
-			# |
-
-			# ---
-			# Function to remove duplicate + and - operator symbols
-			# Source: https://stackoverflow.com/questions/51069610/how-can-i-keep-only-the-given-operators-and-numbers
-			def normalize_sign(m):
-				return '-' if m.group().count('-') % 2 else '+'
-			# |
-			# Remove characters that are not digits or operators
-			if nett_weight != None:
-				tmp = re.sub(r'[^\dx/+-.]', '', nett_weight)
+				product["Brand"] = brand
+				# ---
+	
 				# |
-				# Replace multiple occurences of x, / or . by a single occurence
-				# and remove heading occurences of + and -
-				tmp = re.sub(r'[+\-]*([x/.])[x/.]*', r'\1', tmp)
-				# |
-				# Normalize sign when multiple + and - are encountered
-				output = re.sub('[+\-]{2,}', normalize_sign, tmp)
-				# |
-				# |
-				if "kg" in nett_weight:
-					output = "1000 *" + output
-				# |
-				# Using a helper column to calculate Price per 100g
-				weight_g = "%.0f" % int(eval(output.replace("x", "*")))
-				unit_price = round((float(price) * 100 / float(weight_g)), 2)
-			# |
-			product["Weight (g)"] = weight_g
-			product["Price per 100g"] = unit_price
-			# ---
-
-			# |
-
-			# ---
-			def in_stock():
-				button_text = products[i].css("button.btn-primary::text").get().lower()
-				# |
-				oos_keywords = ["sold out", "out of stock", "no stock", "unavailable"]
-				# |
-				if any(words in button_text for words in oos_keywords):
-					in_stock = "No"
+	
+				# ---
+				if brand not in milk_name:
+					# Prepend Name with Brand, then delete duplicate substrings
+					# Use reversed() method to keep last occurrence of duplicate
+					a = (brand + " " + milk_name).split()
+					b = dict(zip(reversed([x.lower()for x in a]), reversed(a)))
+					name = " ".join(reversed(b.values()))
+					# |
 				else:
-					in_stock = "Yes"
+					name = milk_name
 				# |
-			return in_stock
-			# ---
-
-			in_stock()
-
-			# |
-
-			# ---
-
-			product_list.append(product)
-			# ---------
-
-			# |
-
-			# ---
-			try:
+				product["Name"] = name
 				# ---
-				milk_tag = products[i].xpath("..//div[@class='product-tag']/text()").get()
+	
 				# |
-				promo = re.compile(r"Buy \d+ for (?:\$\d*\.\d+|\d+)")
-				# |
-				# |
-				if bool(promo.search(milk_tag)):
-					nums = re.findall(r"(?:\d*\.\d+|\d+)", milk_tag)
-					# |
-					product = {}
-					product["Stage"] = stage
-					product["Brand"] = brand
-					product["Name"] = f"{name} ({milk_tag})"
-					product["Nett Weight"] = f"{nums[0]}x{nett_weight}"
-					product["Price (SGD)"] = nums[1]
-					product["Weight (g)"] = int(nums[0]) * int(weight_g)
-					product["Price per 100g"] = round((float(nums[1]) * 100 / product["Weight (g)"]), 2)
-					# |
-					in_stock()
-					# |
-					# |
-					product_list.append(product)
-					# |
-					print(f"\"{milk_tag}\" promo found for [{i+1}] {stage}: {name}.")
+	
 				# ---
-			# |
-			except:
-				print(f"No promotions for [{i+1}] {stage}: {name}.")
-			# |
-			# ------------------
-
-
-
-			product_list_consolidated.extend(product_list)
-
-			product_list_df = pd.DataFrame(product_list_consolidated)
-
-			product_list_df = product_list_df.sort_values(
-				by=["Stage", "Name"],
-				na_position="last"
-			)
-
-
-			# Function to move columns in DataFrame
-			def movecol(df, cols_to_move=[], ref_col="", place="After"):
+				nett_weight = products[i].css("div.product-packSize::text").get().lower().replace(" ", "")
+				# |
+				product["Nett Weight"] = nett_weight
 				# ---
-				cols = df.columns.tolist()
+	
 				# |
-				if place == "After":
-					seg1 = cols[:list(cols).index(ref_col) + 1]
-					seg2 = cols_to_move
-				# |
-				if place == "Before":
-					seg1 = cols[:list(cols).index(ref_col)]
-					seg2 = cols_to_move + [ref_col]
-				# |
-				seg1 = [i for i in seg1 if i not in seg2]
-				seg3 = [i for i in cols if i not in seg1 + seg2]
-				# |
-				return(df[seg1 + seg2 + seg3])
+	
 				# ---
-
-
-			product_list_df = movecol(
-				product_list_df,
-				cols_to_move=["Weight (g)"],
-				ref_col="Price (SGD)",
-				place="Before"
-			)
-
-
-			product_list_df = product_list_df.sort_values(
-				by=["Stage", "Name"],
-				na_position="last"
-			)
-
-
-			# Optional: remove helper column; we don't need to display it
-			# product_list_df = product_list_df.drop(
-			# 	columns=["Weight (g)"],
-			# 	axis=1
-			# )
+				price = re.findall(r"[-+]?(?:\d*\.\d+|\d+)", products[i].css("div.product-price > span::text").get())[0]
+				# |
+				product["Price (SGD)"] = price
+				# ---
+	
+				# |
+	
+				# ---
+				# Function to remove duplicate + and - operator symbols
+				# Source: https://stackoverflow.com/questions/51069610/how-can-i-keep-only-the-given-operators-and-numbers
+				def normalize_sign(m):
+					return '-' if m.group().count('-') % 2 else '+'
+				# |
+				# Remove characters that are not digits or operators
+				if nett_weight != None:
+					tmp = re.sub(r'[^\dx/+-.]', '', nett_weight)
+					# |
+					# Replace multiple occurences of x, / or . by a single occurence
+					# and remove heading occurences of + and -
+					tmp = re.sub(r'[+\-]*([x/.])[x/.]*', r'\1', tmp)
+					# |
+					# Normalize sign when multiple + and - are encountered
+					output = re.sub('[+\-]{2,}', normalize_sign, tmp)
+					# |
+					# |
+					if "kg" in nett_weight:
+						output = "1000 *" + output
+					# |
+					# Using a helper column to calculate Price per 100g
+					weight_g = "%.0f" % int(eval(output.replace("x", "*")))
+					unit_price = round((float(price) * 100 / float(weight_g)), 2)
+				# |
+				product["Weight (g)"] = weight_g
+				product["Price per 100g"] = unit_price
+				# ---
+	
+				# |
+	
+				# ---
+				def in_stock():
+					button_text = products[i].css("button.btn-primary::text").get().lower()
+					# |
+					oos_keywords = ["sold out", "out of stock", "no stock", "unavailable"]
+					# |
+					if any(words in button_text for words in oos_keywords):
+						in_stock = "No"
+					else:
+						in_stock = "Yes"
+					# |
+				return in_stock
+				# ---
+	
+				product["In Stock"] = in_stock()
+	
+				# |
+	
+				# ---
+	
+				product_list.append(product)
+				# ---------
+	
+				# |
+	
+				# ---
+				try:
+					# ---
+					milk_tag = products[i].xpath("..//div[@class='product-tag']/text()").get()
+					# |
+					promo = re.compile(r"Buy \d+ for (?:\$\d*\.\d+|\d+)")
+					# |
+					# |
+					if bool(promo.search(milk_tag)):
+						nums = re.findall(r"(?:\d*\.\d+|\d+)", milk_tag)
+						# |
+						product = {}
+						product["Stage"] = stage
+						product["Brand"] = brand
+						product["Name"] = f"{name} ({milk_tag})"
+						product["Nett Weight"] = f"{nums[0]}x{nett_weight}"
+						product["Price (SGD)"] = nums[1]
+						product["Weight (g)"] = int(nums[0]) * int(weight_g)
+						product["Price per 100g"] = round((float(nums[1]) * 100 / product["Weight (g)"]), 2)
+						# |
+						product["In Stock"] = in_stock()
+						# |
+						# |
+						product_list.append(product)
+						# |
+						print(f"\"{milk_tag}\" promo found for [{i+1}] {stage}: {name}.")
+					# ---
+				# |
+				except:
+					print(f"No promotions for [{i+1}] {stage}: {name}.")
+				# |
+				# ------------------
 	
 	
-			product_list_df.drop_duplicates(
-				subset=None,
-				keep="last",
-				inplace=True,
-				ignore_index=True
+	
+				product_list_consolidated.extend(product_list)
+	
+				product_list_df = pd.DataFrame(product_list_consolidated)
+	
+				product_list_df = product_list_df.sort_values(
+					by=["Stage", "Name"],
+					na_position="last"
+				)
+	
+	
+				# Function to move columns in DataFrame
+				def movecol(df, cols_to_move=[], ref_col="", place="After"):
+					# ---
+					cols = df.columns.tolist()
+					# |
+					if place == "After":
+						seg1 = cols[:list(cols).index(ref_col) + 1]
+						seg2 = cols_to_move
+					# |
+					if place == "Before":
+						seg1 = cols[:list(cols).index(ref_col)]
+						seg2 = cols_to_move + [ref_col]
+					# |
+					seg1 = [i for i in seg1 if i not in seg2]
+					seg3 = [i for i in cols if i not in seg1 + seg2]
+					# |
+					return(df[seg1 + seg2 + seg3])
+					# ---
+	
+	
+				product_list_df = movecol(
+					product_list_df,
+					cols_to_move=["Weight (g)"],
+					ref_col="Price (SGD)",
+					place="Before"
+				)
+	
+	
+				product_list_df = product_list_df.sort_values(
+					by=["Stage", "Name"],
+					na_position="last"
+				)
+	
+	
+				# Optional: remove helper column; we don't need to display it
+				# product_list_df = product_list_df.drop(
+				# 	columns=["Weight (g)"],
+				# 	axis=1
+				# )
+		
+		
+				product_list_df.drop_duplicates(
+					subset=None,
+					keep="last",
+					inplace=True,
+					ignore_index=True
+				)
+	
+	
+				# successively insert 3 new columns from the left
+				product_list_df.insert(
+					loc=0,
+					column="Country-Retailer",
+					value="SG-ShengSiong"
+				)
+				product_list_df.insert(0, "Day", local_datetime.strftime("%a"))
+				product_list_df.insert(0, "Date", local_datetime.strftime("%Y/%m/%d"))
+				
+				
+				product_list_df.index = pd.RangeIndex(
+					start=1,
+					stop=(len(product_list_df.index) + 1),
+					step=1
+				)
+	
+	
+	
+				print("\n\n", product_list_df.to_string())
+				print(f"Duplicates: \n\n\n{product_list_df[product_list_df.duplicated()]}\n")
+	
+	
+				timestamp = str(local_datetime.strftime("[%Y-%m-%d %H:%M:%S]"))
+				
+				output_file = str(timestamp + " sg-ov8.csv")
+				output_dir = Path("../scraped-data/sg-shengsiong")
+				
+				
+				# Create directory as required; won't raise an error if directory already exists
+				output_dir.mkdir(parents=True, exist_ok=True)
+				
+				
+				product_list_df.to_csv(
+					(output_dir / output_file),
+					float_format="%.2f",
+					encoding="utf-8"
+				)
+				
+				# Output filename format: "[YYYY-MM-DD hh:mm:ss] sg-ov8.csv"
+
+		
+		except Exception:
+			print(
+			f'''
+			  \n\n
+			  ---
+			  One or more errors occurred:
+			  
+			  {traceback.format_exc()}
+			  ---
+			  \n\n
+			  '''
 			)
-
-
-			# successively insert 3 new columns from the left
-			product_list_df.insert(
-				loc=0,
-				column="Country-Retailer",
-				value="SG-ShengSiong"
-			)
-			product_list_df.insert(0, "Day", local_datetime.strftime("%a"))
-			product_list_df.insert(0, "Date", local_datetime.strftime("%Y/%m/%d"))
-			
-			
-			product_list_df.index = pd.RangeIndex(
-				start=1,
-				stop=(len(product_list_df.index) + 1),
-				step=1
-			)
-
-
-
-			print("\n\n", product_list_df.to_string())
-			print(f"Duplicates: \n\n\n{product_list_df[product_list_df.duplicated()]}\n")
-
-
-			timestamp = str(local_datetime.strftime("[%Y-%m-%d %H:%M:%S]"))
-			
-			output_file = str(timestamp + " sg-ov8.csv")
-			output_dir = Path("../scraped-data/sg-shengsiong")
-			
-			
-			# Create directory as required; won't raise an error if directory already exists
-			output_dir.mkdir(parents=True, exist_ok=True)
-			
-			
-			product_list_df.to_csv(
-				(output_dir / output_file),
-				float_format="%.2f",
-				encoding="utf-8"
-			)
-			
-			# Output filename format: "[YYYY-MM-DD hh:mm:ss] sg-ov8.csv"
 
 
 
