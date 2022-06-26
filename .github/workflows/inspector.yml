@@ -49,7 +49,7 @@ jobs:
             python-version: 3.8.2
             
       - name: Run Python script
-        run: reschedule_next_run.py
+        run: python reschedule_next_run.py
       
       
       
