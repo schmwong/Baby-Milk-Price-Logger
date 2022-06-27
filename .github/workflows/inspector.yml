@@ -37,6 +37,8 @@ jobs:
             
       - name: Checkout repo content
         uses: actions/checkout@v2
+        with:
+            token: ${{ secrets.WORKFLOW_TOKEN }}
             
       - name: Setup Python
         uses: actions/setup-python@v2
