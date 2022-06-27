@@ -9,8 +9,10 @@ import yaml
 
 workflow_file = os.environ["workflow_path"]
 
-with open(workflow_file, "r") as file:
+with open(workflow_file, "r+") as file:
 	wf = yaml.safe_load(file)
+	wf["jobs"]["scrape"]["runs-on"] = "ubuntu-latest"
+	wf = yaml.dump(wf, file)
 
 	try:
 		print(
@@ -27,6 +29,8 @@ with open(workflow_file, "r") as file:
 			
 			'''
 		)
+
+		
 		
 	finally:
 		print("\n\nWhole workflow:\n", wf, "\n\n")
