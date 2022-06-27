@@ -6,10 +6,7 @@ on:
     workflows: 
       [scrape-giant-manual, scrape-ntuc-manual, scrape-shengsiong-manual]
     types: [completed]
-        
-
-permissions: read-all|write-all
-
+    
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -62,7 +59,7 @@ jobs:
             git add -A
             timestamp=$(date -u)
             git commit -m "Modified: [${timestamp}] ${{ github.event.workflow.name }}" 
-            git push "https://${GITHUB_ACTOR}:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main || exit 0
+            git push "https://${GITHUB_ACTOR}:${{ secrets.WORKFLOW_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main || exit 0
 
       
       
