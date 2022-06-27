@@ -15,13 +15,15 @@ with open(workflow_file, "r") as file:
 	try:
 		print(
 			f'''
-	
+
+			
+			Scraper runs on {wf["jobs"]["scrape"]["runs-on"]}
+			Scraper uses Python {wf["jobs"]["scrape"]["steps"][1]["with"]["python-version"]}
 	
 	
 			Steps if caller workflow fails:
-			{wf["jobs"].get("on-failure").get("steps")}
-	
-			
+			{wf["jobs"]["scrape"]["steps"]}
+
 			
 			'''
 		)
