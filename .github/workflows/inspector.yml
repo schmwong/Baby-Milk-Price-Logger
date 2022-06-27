@@ -51,7 +51,7 @@ jobs:
             echo "Workflow file path: ${{ github.event.workflow.path }}"
             echo "${{ github.event.workflow.html_url }}"
             export workflow_path=${{ github.event.workflow.path }}
-            pip install pyyaml
+            pip install ruamel.yaml
             python reschedule_next_run.py
       
       - name: Commit and push modified YAML file
