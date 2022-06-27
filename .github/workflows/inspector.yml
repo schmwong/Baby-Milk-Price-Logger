@@ -49,6 +49,7 @@ jobs:
             echo "Workflow file path: ${{ github.event.workflow.path }}"
             echo "${{ github.event.workflow.html_url }}"
             export workflow_path=${{ github.event.workflow.path }}
+            pip install pyyaml
             python reschedule_next_run.py
       
       
