@@ -62,7 +62,7 @@ jobs:
             git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
             git add -A
             timestamp=$(date -u)
-            git commit -m "Modified: [${timestamp}] ${{ github.event.workflow.name }}" 
+            git commit -m "${{ github.event.workflow.name }}" 
             git push "https://${GITHUB_ACTOR}:$WORKFLOW_TOKEN@github.com/${GITHUB_REPOSITORY}.git" HEAD:main || exit 0
 
       
