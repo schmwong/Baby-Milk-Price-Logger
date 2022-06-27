@@ -52,6 +52,15 @@ jobs:
             pip install pyyaml
             python reschedule_next_run.py
       
+      - name: Commit and push modified YAML file
+        run: |
+            git config user.name "${GITHUB_ACTOR}"
+            git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+            git add -A
+            timestamp=$(date -u)
+            git commit -m "Modified: [${timestamp}] ${{ github.event.workflow.name }}" 
+            git push "https://${GITHUB_ACTOR}:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main || exit 0
+
       
       
   dump_contexts_to_log:
