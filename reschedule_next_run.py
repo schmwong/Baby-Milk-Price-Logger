@@ -1,23 +1,24 @@
 
 # This script only works within Github Actions
-# pip install pyyaml
+# pip install ruamel.yaml
 # ---
 
 import os
-import yaml
+from ruamel.yaml import YAML
 
 
 workflow_file = os.environ["workflow_path"]
+yaml = YAML()  # defaults to round-trip (typ="rt")
 
 with open(workflow_file, "r") as file:
-	wf = yaml.safe_load(file)
+	wf = yaml.load(file)
 	
 	
 wf["jobs"]["scrape"]["runs-on"] = "ubuntu-latest"
 
 
 with open(workflow_file, "w") as file:
-	yaml.safe_dump(wf, file, default_flow_style=False)
+	yaml.dump(wf, file)
 	
 try:
 	print(
